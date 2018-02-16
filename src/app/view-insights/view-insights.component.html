@@ -1,0 +1,37 @@
+<div class="view-insight">
+  <div class="title">View Insights</div>
+  <div class="back" routerLink="/create"><i class="material-icons">chevron_left</i> Create Insights</div>
+  <div class="search">
+    <mat-form-field>
+      <input matInput placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="filterInsights()">
+    </mat-form-field>
+    <!-- <div class="tags">
+        <div class="selected-value" (click)="showDropDown = true"><span>{{selectedTag}}</span><i class="material-icons">arrow_drop_down</i></div>
+        <div class="drop-down" *ngIf="showDropDown">
+          <div class="tag" *ngFor="let tag of tags" (click)="selectTag(tag)">{{tag}}</div>
+        </div>
+    </div> -->
+    <mat-form-field class="tags">
+      <input matInput autocomplete="off" placeholder="Search Tags" [matAutocomplete]="auto" [(ngModel)]="selectedTag" (ngModelChange)="selectTag()">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let tag of filteredTags" [value]="tag">
+          <span>{{ tag }}</span>
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </div>
+  <div class="table-container">
+    <div class="header-row row">
+      <div class="cell header-cell" *ngFor="let header of attributes" [style.flex]="header === 'insight' ?  '0 0 40%' : '1 1 0'">
+        {{ header | capitalize }}
+      </div>
+      <div class="cell button"></div>
+    </div>
+    <div class="data-rows">
+      <div class="data-row row" *ngFor="let insight of filteredInsights; let i = index" (mouseenter)="hoverRow = i" (mouseleave)="hoverRow = -1" (click)="viewInsight(insight)">
+        <div class="cell data-cell" *ngFor="let attribute of attributes"  [style.flex]="attribute === 'insight' ?  '0 0 40%' : '1 1 0'" [innerHTML]="insight[attribute]"></div>
+        <div class="cell button"><button mat-raised-button (click)="updateInsight(insight)" [class.hidden]="hoverRow !== i">Edit</button></div>
+      </div>
+    </div>
+  </div>
+</div>

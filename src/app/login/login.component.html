@@ -1,0 +1,19 @@
+<div class="login-box">
+    <form [formGroup]="loginForm">
+      <div class="title">{{isSignup ? 'Create New Account' : 'Insights Database Login'}}</div>
+      <mat-form-field>
+        <input matInput placeholder="username" ngModel formControlName="username">
+        <mat-error>
+          {{loginForm.get('username').errors?.required ? 'Required' : isSignup ? 'That username is alreay taken' : 'Invalid Username'}}
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="password" ngModel formControlName="hash" type="password">
+        <mat-error>{{loginForm.get('hash').errors?.required ? 'Required' : 'Invalid Password'}}</mat-error>
+      </mat-form-field>
+      <div class="buttons">
+        <button mat-raised-button (click)="login()" *ngIf="!isSignup" >Login</button>
+        <button mat-raised-button (click)="signup()">Sign Up</button>
+      </div>
+    </form>
+</div>

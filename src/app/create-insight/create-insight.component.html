@@ -1,0 +1,73 @@
+<mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+<div class="full-page">
+  <div class="form-container">
+    <div class="upper-page">
+      <div class="title">{{selectedInsight.insightId ? 'Edit Insight': 'Create Insight'}}</div>
+      <div class="back" routerLink="/view"><i class="material-icons">chevron_left</i> Back to View Insights</div>
+      <!-- <div class="toogle">
+        <button class="first-button" [color]="layout[isScripture].buttonColor" mat-raised-button (click)="isScripture = true">Scripture</button>
+        <button class="second-button" [color]="layout[!isScripture].buttonColor" mat-raised-button (click)="isScripture = false">Talk</button>
+      </div> -->
+    </div>
+    <div class="lower-page">
+      <form (ngSubmit)="submit(f.value)" #f="ngForm" (keydown.enter)="$event.preventDefault()">
+        <div class="inputs-container">
+          <div class="multi-auto-complete">
+            <mat-form-field>
+              <input matInput [(ngModel)]="tagValue" (ngModelChange)="filterTags(true)" (focusin)="showDropDown = true"  (focusout)="focusOut()"  autocomplete="off" (keyup)="changeTag($event.code)" placeholder="Tags" name="tags">
+            </mat-form-field>
+            <div class="selected-tags" *ngIf="selectedTags.length">
+              Selected Tags:
+              <span class="tag" *ngFor="let tag of selectedTags; let i = index">{{tag}} <i class="material-icons" (click)="selectedTags.splice(i,1)">close</i>
+              <span *ngIf="i !== selectedTags.length -1">,</span> </span>
+            </div>
+            <mat-card *ngIf="showDropDown">
+              <div class="drop-down" #dropdown>
+                <div class="tag" *ngFor="let tag of filteredTags; let i = index" (click)="changeTag('Enter', tagValue = tag)" (mouseenter)="selectedTagIndex = i" (mouseleave)="selectedTagIndex = -1" [class.hover]="selectedTagIndex === i">{{tag}}</div>
+              </div>
+            </mat-card>
+          </div>
+          <mat-form-field>
+            <input matInput autocomplete="off" [placeholder]="layout[isScripture].first" [matAutocomplete]="autobook" [ngModel]="selectedInsight.book" (ngModelChange)="setUpChapters($event)" [name]="layout[isScripture].first.toLowerCase()">
+            <mat-autocomplete #autobook="matAutocomplete">
+              <mat-option *ngFor="let book of filteredBooks" [value]="book.book">
+                <span>{{ book.book }}</span>
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+          <mat-form-field>
+            <input autocomplete="off" matInput type="number" (ngModelChange)="filterChapters($event)" [placeholder]="layout[isScripture].second" [ngModel]="selectedInsight.chapter" [name]="layout[isScripture].second.toLowerCase()">
+          </mat-form-field>
+          <mat-form-field>
+            <input autocomplete="off" matInput (ngModelChange)="setVerses($event)" [placeholder]="layout[isScripture].third" [ngModel]="selectedInsight.verses"  [name]="layout[isScripture].third.toLowerCase()">
+          </mat-form-field>
+          <div class="rating-container">
+            <div class="label" [class.active]="isRatingActive">Rating</div>
+            <div class="rating-measure">
+              <div class="line" [class.active]="isRatingActive">
+              </div>
+              <div class="marker" droppable draggable  [style.left]="calcMarker" (onDragEnd)="isRatingActive = false" (onDragStart)="isRatingActive = true"></div>
+              <div class="tick-drop" droppable *ngFor="let index of [0,1,2,3,4,5,6,7,8,9,10]" [attr.number]="index" (click)="dragOver(index)" (onDragOver)="dragOver(index)" [style.width]="'10%'" [style.left.%]="index*10-5">
+                  <span class="tick-container"><span class="tick" [class.active]="isRatingActive" [attr.number]="index"></span></span>
+              </div>
+              <div class="tick-number" *ngFor="let index of [0,1,2,3,4,5,6,7,8,9,10]" [style.left.%]="index*10-.5">
+                <span *ngIf="chosenMarker === index" [class.active]="isRatingActive" [class.ten]="index === 10">{{index}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="label">Insight</div>
+          <quill-editor [modules]="toolbar" [ngModel]="selectedInsight.insight"  name="insight" placeholder="Record Insight Here..."></quill-editor>
+          </div>
+          <button type="submit"  mat-raised-button>{{selectedInsight.insightId ? 'Edit': 'Create'}}</button>
+      </form>
+    </div>
+  </div>
+  <div class="scripture" *ngIf="displayContent">
+      <div class="title">{{displayBook}} {{displayChapter}}<span *ngIf="displayVerse">:</span>{{displayVerse}}</div>
+      <div class="chapter" *ngFor="let chapter of displayContent; let i = index;">
+        <span class="sub-title">Chapter {{displayChapter || i + 1}}</span>
+        <br><br>
+        <div class="verse" *ngFor="let verse of chapter">{{verse}}<br><br></div>
+      </div>
+  </div>
+</div>

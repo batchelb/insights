@@ -1,0 +1,258 @@
+@width:600px;
+.full-page{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    .scripture {
+        border: #221e1e solid 1px;
+        box-shadow: 2px 3px #221e1e;
+        border-radius: 2px;
+        margin: 50px 100px 50px 40px;
+        flex: 1 1 50%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        &::-webkit-scrollbar-track
+        {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar
+        {
+            width: 6px;
+            background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar-thumb
+        {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #555;
+        }
+        .title {
+            position: sticky;
+            display: flex;
+            align-items: center;
+            top:0px;
+            padding: 20px 10px;
+            margin:0px;
+            width: calc(~"100% - 10px");
+            background: white;
+            border-bottom: #555 1px solid;
+        }
+        .chapter {
+            padding: 15px 15px 15px 30px;
+        }
+    }
+}
+.form-container {
+    flex: 1 1 0%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .upper-page{
+        margin-bottom: 10px;
+        width: @width;
+        flex: 0 0 50px;
+        .title {
+            margin-bottom: 2px;
+        }
+        //TODO Determine if you need this
+        .toogle{
+            margin-top:10px;
+            .first-button {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .second-button {
+                position: relative;
+                right: 4px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+    .lower-page{
+        padding-left:20px;
+        flex: 1 1 0;
+        form{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: @width;
+            .inputs-container{
+                display: flex;
+                flex-direction: column;
+                height: 90%;
+                >*{
+                    width:@width;
+                    flex: 0 0 65px;
+                }
+                .dropdown{
+                    border: solid 1px black;
+                    display: none;
+                    .dropdown-item{
+                        border-top: 1px solid black;
+                        padding: 5px;
+                        &:first-child{
+                            border: none;
+                        }
+                    }
+                }
+            }
+            .label{
+                font-size: 20px;
+                color: rgba(0,0,0,.42);
+                margin-top:10px;
+                margin-top: 3px;
+                max-height: 25px;
+            }
+            .active{
+                color:#233596 !important;
+                transition: color .5s;
+            }
+            .rating-measure{
+                width:100%;
+                height: 50px;
+                padding-top:20px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                .line{
+                    // height: 1px;
+                    background: rgba(0,0,0,.42);
+                    height: 2px;
+                    // border: 2px solid rgba(0,0,0,.42);
+                    width:100%;
+                    &.active{
+                        background: #233596;
+                        transition: background-color .5s;
+                    }
+                }
+                .marker{
+                    background:#233596;
+                    position: absolute;
+                    height:30px;
+                    width:30px;
+                    border-radius: 50px;
+                    z-index: 2;
+                }
+                .tick-drop{
+                    position: absolute;
+                    width:10%;
+                    display: flex;
+                    cursor: pointer;
+                    .tick-container {
+                        width:100%;
+                        display: flex;
+                        justify-content: center;
+                        .tick{
+                            height: 20px;
+                            width: 3px;
+                            background:rgba(0,0,0,.42);
+                            &[number="0"], &[number="5"] ,&[number="10"]{
+                                height: 30px;
+                            }
+                            &.active{
+                                background: #233596;
+                                transition: background-color .5s;
+                            }
+                        }
+                    }
+                }
+                .tick-number{
+                    top:0;
+                    position: absolute;
+                    span{
+                        color:rgba(0,0,0,.42);
+                        transition: color .5s;
+                        font-size: 26px;
+                        position: relative;
+                        right:2px;
+                    }
+                    .ten {
+                        right:8px;
+                    }
+                }
+            }
+            .multi-auto-complete {
+                position: relative;
+                width: 100%;
+                mat-form-field{
+                    width: 100%;
+                }
+                .selected-tags{
+                    position: relative;
+                    bottom: 18px;
+                    i{
+                        font-size: 10px;
+                        color: red;
+                        cursor: pointer;
+                    }
+                }
+                mat-card{
+                    position: absolute;
+                    z-index: 4;
+                    top:45px;
+                    width:100%;
+                }
+                .drop-down{
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid lightgray;
+                    max-height: 300px;
+                    overflow: auto;
+                    width:100%;
+                    // &::-webkit-scrollbar-track
+                    // {
+                    //     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                    //     border-radius: 10px;
+                    //     background-color: white;
+                    // }
+
+                    // &::-webkit-scrollbar
+                    // {
+                    //     width: 12px;
+                    //     background-color: white;
+                    // }
+
+                    // &::-webkit-scrollbar-thumb
+                    // {
+                    //     border-radius: 10px;
+                    //     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                    //     background-color: rgba(0,0,0,.42);
+                    // }
+                    .tag {
+                        background: white;;
+                        padding: 0px 16px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        min-height: 48px;
+                        &.hover{
+                            background: lightgrey;
+                        }
+                        &:last-child {
+                            border:none;
+                        }
+                    }
+                }
+            }
+            quill-editor{
+                margin-top:10px;
+                flex: 1 1 0 !important;
+            }
+            button {
+                margin-top: 20px;
+                width: 200px;
+                align-self: flex-end;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+On self-Introspection: Self-Growth Model
+Bottom - rootss support the rest
+Middle - reach out to other 
+
+1 - spirtuality - 10
+2 - family Relationships - 10
+3 - Intellectual/Emtions Development - 10
+4 - Service to Others -10
+5 - Physical Health -10
+6 - Career Success -10
+7 - Social Esteem -10
+8 - Money/Material -10
+
+
+Socail Contract - if we didnot cooperate we would be at the lowest form. We have an obligation ney require social contract, give up a little to benefit the model
+There is written constitution and unwritten and waiting in line
+
+Deontology Ethics is the end, not a means to the end
+- would you universalize your choice? if everybody did what you chose would you be okay with that
+- what if it is your mom?
+- reason to the truth of ethics
+
+
+Virtue Ethics 
+- What does a moral person do?
+- Who am I? What do I stand for?
+- Professional code of ethics
+
+CRoss
+Industry
+Standard
+Process for
+Data
+Mining'
+
+-Business understanding - what is your primary objective, what is successful
+-Data Understanding - Identify data quality problems, idetify hypotheses
+-Data Preparation - combining data, giving appropiate column names, investigating outliers, clean data, partiion
+-Modeling - select modeling technqiue, build model
+-EValuation - find best predictor, understand model
+-Deployment - use model refine mosdel
