@@ -1,607 +1,507 @@
 {
-    root:[
+    "root":[
         {
-            tag:['excuses','wickedness'],
-            content:[
+            "tag":["excuses","wickedness"],
+            "content":[
                 {
-                    book:'Helaman',
-                    chapter:'16',
-                    verses:'18-19',
-                    scripture:`18 That it is not reasonable that such a being as a Christ shall come; if so, and he be the Son of God, the Father of heaven and of earth, as it has been spoken, why will he not show himself unto us as well as unto them who shall be at Jerusalem?
-                            19 Yea, why will he not show himself in this land as well as in the land of Jerusalem?`,
-                    description:'people will find a reason not to believe in any given day',
-                    rating: 3
+                    "book":"Helaman",
+                    "chapter":"16",
+                    "verses":"18-19",
+                    "description":"people will find a reason not to believe in any given day",
+                    "rating": 3
                 },
                 {
-                    book:'3 Nephi',
-                    chapter:'1',
-                    verses:'22',
-                    scripture:`2 And it came to pass that from this time forth there began to be lyings sent forth among the people, by Satan, to harden their hearts, to the intent that they might not believe in those signs and wonders which they had seen; but notwithstanding these lyings and deceivings the more part of the people did believe, and were converted unto the Lord.`,
-                    description:'people will find a reason not to believe in any given day',
-                    rating: 3
+                    "book":"3 Nephi",
+                    "chapter":"1",
+                    "verses":"22",
+                    "scripture":"2 And it came to pass that from this time forth there began to be lyings sent forth among the people, by Satan, to harden their hearts, to the intent that they might not believe in those signs and wonders which they had seen; but notwithstanding these lyings and deceivings the more part of the people did believe, and were converted unto the Lord.",
+                    "description":"people will find a reason not to believe in any given day",
+                    "rating": 3
                 },
                 {
-                    book:'3 Nephi',
-                    chapter:'2',
-                    verses:'1-2',
-                    scripture:`2 Imagining up some vain thing in their hearts, that it was wrought by men and by the power of the devil, to lead away and deceive the hearts of the people; and thus did Satan get possession of the hearts of the people again, insomuch that he did blind their eyes and lead them away to believe that the doctrine of Christ was a foolish and a vain thing.
-
-                    3 And it came to pass that the people began to wax strong in wickedness and abominations; and they did not believe that there should be any more signs or wonders given; and Satan did go about, leading away the hearts of the people, tempting them and causing them that they should do great wickedness in the land.`,
-                    description:'Why people aree always crediting satan? really what possible reason would have in saying repent and believe in christ',
-                    rating: 5
+                    "book":"3 Nephi",
+                    "chapter":"2",
+                    "verses":"1-2",
+                    "description":"Why people aree always crediting satan? really what possible reason would have in saying repent and believe in christ",
+                    "rating": 5
                 },
                 {
-                    book:'Acts',
-                    chapter:'2',
-                    verses:'3-4,7,13',
-                    scripture:`3 And there appeared unto them cloven tongues like as of fire, and it sat upon each of them.
-
-                    4 And they were all filled with the Holy Ghost, and began to speak with other tongues, as the Spirit gave them utterance.
-
-                    7 And they were all amazed and marvelled, saying one to another, Behold, are not all these which speak Galilæans?
-
-                    13 Others mocking said, These men are full of new wine.`,
-                    description:'Even with a miracle right in front of people sometimes they wiwll not believe.',
-                    rating: 3
+                    "book":"Acts",
+                    "chapter":"2",
+                    "verses":"3-4,7,13",
+                    "description":"Even with a miracle right in front of people sometimes they wiwll not believe.",
+                    "rating": 3
                 },
                 {
-                    book:'1 Nephi',
-                    chapter:'2',
-                    verses:'12',
-                    scripture:`12 And thus Laman and Lemuel, being the eldest, did murmur against their father. And they did murmur because they knew not the dealings of that God who had created them.`,
-                    description:'How often are we like Laman and Lemuel? Where we murmur simply because we do not trust Heavenly Father and his dealings with us. The solution seems here to morre fully underrstand our heavenly father and then we will be less adapt to murmur.',
-                    rating: 3
+                    "book":"1 Nephi",
+                    "chapter":"2",
+                    "verses":"12",
+                    "scripture":"12 And thus Laman and Lemuel, being the eldest, did murmur against their father. And they did murmur because they knew not the dealings of that God who had created them.",
+                    "description":"How often are we like Laman and Lemuel? Where we murmur simply because we do not trust Heavenly Father and his dealings with us. The solution seems here to morre fully underrstand our heavenly father and then we will be less adapt to murmur.",
+                    "rating": 3
                 }
             ]
         },
         {
-            tag:['love','mercy'],
-            content:[
+            "tag":["love","mercy"],
+            "content":[
                 {
-                    book:'3 Nephi',
-                    chapter:'1',
-                    verses:'9-11',
-                    scripture:`9 Now it came to pass that there was a day set apart by the unbelievers, that all those who believed in those traditions should be put to death except the sign should come to pass, which had been given by Samuel the prophet.
-
-                    10 Now it came to pass that when Nephi, the son of Nephi, saw this wickedness of his people, his heart was exceedingly sorrowful.
-
-                    11 And it came to pass that he went out and bowed himself down upon the earth, and cried mightily to his God in behalf of his people, yea, those who were about to be destroyed because of their faith in the tradition of their fathers.`,
-                    description:'If you love people who arrea in trouble pray for them in their trails',
-                    rating: 3
+                    "book":"3 Nephi",
+                    "chapter":"1",
+                    "verses":"9-11",
+                    "description":"If you love people who arrea in trouble pray for them in their trails",
+                    "rating": 3
                 },
                 {
-                    book:'Acts',
-                    chapter:'23',
-                    verses:'11',
-                    scripture:`11 And the night following the Lord stood by him, and said, Be of good cheer, Paul: for as thou hast testified of me in Jerusalem, so must thou bear witness also at Rome.`,
-                    description:'The Lord is exacty aware of were paul is and what paul is about to do. He strengths paul and confirms his testimony before death. He also knows us what we about to do, and if we followw him it can be exactly according to god\'s plans',
-                    rating: 5
+                    "book":"Acts",
+                    "chapter":"23",
+                    "verses":"11",
+                    "scripture":"11 And the night following the Lord stood by him, and said, Be of good cheer, Paul: for as thou hast testified of me in Jerusalem, so must thou bear witness also at Rome.",
+                    "description":"The Lord is exacty aware of were paul is and what paul is about to do. He strengths paul and confirms his testimony before death. He also knows us what we about to do, and if we followw him it can be exactly according to god\"s plans",
+                    "rating": 5
                 },
                 {
-                    book:'3 Nephi',
-                    chapter:'10',
-                    verses:'4-5',
-                    scripture:`4 O ye people of these great cities which have fallen, who are descendants of Jacob, yea, who are of the house of Israel, how oft have I gathered you as a hen gathereth her chickens under her wings, and have nourished you.
-
-                    5 And again, how oft would I have gathered you as a hen gathereth her chickens under her wings, yea, O ye people of the house of Israel, who have fallen; yea, O ye people of the house of Israel, ye that dwell at Jerusalem, as ye that have fallen; yea, how oft would I have gathered you as a hen gathereth her chickens, and ye would not.`,
-                    description:'Christ is merciful, even here he says he will gather them under his wing, even after all the wickedness. it is also important to note thta gather is a very positive term that the lord uses. He will gather his sheep, and people his people.',
-                    rating: 3
+                    "book":"3 Nephi",
+                    "chapter":"10",
+                    "verses":"4-5",
+                    "description":"Christ is merciful, even here he says he will gather them under his wing, even after all the wickedness. it is also important to note thta gather is a very positive term that the lord uses. He will gather his sheep, and people his people.",
+                    "rating": 3
                 },
                 {
-                    book:'Ether 1',
-                    chapter:'1',
-                    verses:'36-38',
-                    scripture:`36 Then Jared said unto his brother: Cry again unto the Lord, and it may be that he will turn away his anger from them who are our friends, that he confound not their language.
-
-                    37 And it came to pass that the brother of Jared did cry unto the Lord, and the Lord had compassion upon their friends and their families also, that they were not confounded.
-
-                    38 And it came to pass that Jared spake again unto his brother, saying: Go and inquire of the Lord whether he will drive us out of the land, and if he will drive us out of the land, cry unto him whither we shall go. And who knoweth but the Lord will carry us forth into a land which is choice above all the earth? And if it so be, let us be faithful unto the Lord, that we may receive it for our inheritance.`,
-                    description:'The Lord is merciful to those who beleive. The new Testment and Bom of mormon are full of examples like this. The Lord is specifically compassionate to those who specifacally ask. This could be a result of asking requiring faith. ',
-                    rating: 5
+                    "book":"Ether 1",
+                    "chapter":"1",
+                    "verses":"36-38",
+                    "description":"The Lord is merciful to those who beleive. The new Testment and Bom of mormon are full of examples like this. The Lord is specifically compassionate to those who specifacally ask. This could be a result of asking requiring faith. ",
+                    "rating": 5
                 }
             ],
         },
         {
-            tag:['murmering','slothful'],
-            content:[
+            "tag":["converted"],
+            "content":[
                 {
-                    talk:'Beware of Murmuring',
-                    author:'H. Ross Workman',
-                    quote:`The Savior taught a parable to warn us of the treacherous path to disobedience through “murmuring.” In the parable, we learn of a nobleman who had a choice spot of land. He told his servants to plant 12 olive trees and build a tower overlooking the olive grove. The purpose for the tower was to permit a watchman perched upon the tower to warn of the coming of the enemy. Thus, the olive grove could be protected.
-
-                    The servants did not build the tower. The enemy came and broke down the olive trees. The disobedience of the servants left a catastrophe in the olive grove (see D&C 101:43–62).
-
-                    Why did the servants fail to build the tower? The seeds of the disaster were planted by murmuring.
-
-                    According to the Lord’s parable, murmuring consists of three steps, each leading to the next in a descending path to disobedience.
-
-                    First, the servants began to question. They felt to exercise their own judgment upon the instruction given by their master. “What need hath my lord of this tower, seeing this is a time of peace?” they said (D&C 101:48). They questioned first in their own minds and then planted questions in the minds of others. Questioning came first.
-
-                    Second, they began to rationalize and excuse themselves from doing what they had been instructed to do. They said: “Might not this money be given to the exchangers? For there is no need of these things” (D&C 101:49). Thus, they made an excuse for disobedience.
-
-                    The third step inevitably follows: slothfulness in following the commandment of the Master. The parable says, “They became very slothful, and they hearkened not unto the commandments of their lord” (D&C 101:50). Thus, the stage was set for disaster.`,
-                    description:'Three steps to become a murmur. \n 1. Begin not to trust in the council of the lord \n 2. Rationalize and exuse self \n 3. Become slothful. \n dont\'t forget it starts with doubt',
-                    rating:8
+                    "book":"3 Neph1",
+                    "chapter":"1",
+                    "verses":"24-25",
+                    "description":"Misunderstanding the scriputes does not lead to true conversion",
+                    "rating":5
                 }
             ]
         },
         {
-            tag:['converted'],
-            content:[
+            "tag":["plan of salvation"],
+            "content":[
                 {
-                    book:'3 Neph1',
-                    chapter:'1',
-                    verses:'24-25',
-                    scripture:`24 And there were no contentions, save it were a few that began to preach, endeavoring to prove by the scriptures that it was no more expedient to observe the law of Moses. Now in this thing they did err, having not understood the scriptures.
-
-                    25 But it came to pass that they soon became converted, and were convinced of the error which they were in, for it was made known unto them that the law was not yet fulfilled, and that it must be fulfilled in every whit; yea, the word came unto them that it must be fulfilled; yea, that one jot or tittle should not pass away till it should all be fulfilled; therefore in this same year were they brought to a knowledge of their error and did confess their faults.`,
-                    description:'Misunderstanding the scriputes does not lead to true conversion',
-                    rating:5
+                    "book":"Mormon",
+                    "chapter":"5",
+                    "verses":"18",
+                    "scripture":"12 Now behold, this Lachoneus, the governor, was a just man, and could not be frightened by the demands and the threatenings of a robber; therefore he did not hearken to the epistle of Giddianhi, the governor of the robbers, but he did cause that his people should cry unto the Lord for strength against the time that the robbers should come down against them.",
+                    "description":"When oppositionarise be sure to call unto the lord immediatly",
+                    "rating":4
                 },
                 {
-                    talk:'Converted to His Gospel through His Church',
-                    author:'Elder Donald L. Hallstrom',
-                    quote:`Some have come to think of activity in the Church as the ultimate goal. Therein lies a danger. It is possible to be active in the Church and less active in the gospel. Let me stress: activity in the Church is a highly desirable goal; however, it is insufficient. Activity in the Church is an outward indication of our spiritual desire. If we attend our meetings, hold and fulfill Church responsibilities, and serve others, it is publicly observed.`,
-                    description:'Activity in the church is not the ultimate goal. It is desirable but we need to be convert to the gospel',
-                    rating:4
+                    "book":"1 Nephi",
+                    "chapter":"8",
+                    "verses":"5-8",
+                    "scripture":"",
+                    "description":"When Lehi starts his vision of the tree of life a man in a white robe bids him to follow him. It isnt long after that he finds himself in a dark and dreary waste. He then prays to find a way out, when he does he can see a large and spacious field. I beleive this fits with the premortal life and it is not until we pray that we can find our way out to see the goall or eternal life.",
+                    "rating":8
                 }
             ]
         },
         {
-            tag:['plan of salvation'],
-            content:[
+            "tag":["converted","faith"],
+            "content":[
                 {
-                    talk:'Chapter 10',
-                    author:'President Henry B. Erying',
-                    quote:`You see, the names “brother” and “sister” are not just friendly greetings or terms of endearment for us. They are an expression of an eternal truth: God is the literal Father of all mankind; we are each part of His eternal family. Because He loves us with the love of a perfect Father, He wants us to progress and advance and become like Him. He ordained a plan by which we would come to earth, in families, and have experiences that would prepare us to return to Him and live as He lives.
-
-                    The central element of this plan was the promise that Jesus Christ would offer Himself as a sacrifice, to rescue us from sin and death. Our task in that plan is to accept the Savior’s sacrifice by obeying the laws and ordinances of the gospel. You and I accepted this plan. In fact, we rejoiced in it, even though it would mean that we would leave the presence of our Father and forget what we had experienced there with Him.
-
-                    But we were not sent here completely in the dark. Each of us was given a portion of God’s light, called the “Light of Christ,” to help us distinguish between good and evil, right and wrong. This is why even those who live with little or no knowledge of the Father’s plan can still sense, in their hearts, that certain actions are just and moral while others are not.
-
-                    Our sense of right and wrong seems especially keen when we are raising our children. Innate in almost every parent is the desire to teach his or her children moral virtues. This is part of the miracle of Heavenly Father’s plan. He wants His children to come to earth, following the eternal pattern of families that exists in heaven. Families are the basic organizational unit of the eternal realms, and so He intends for them also to be the basic unit on earth. Though earthly families are far from perfect, they give God’s children the best chance to be welcomed to the world with the only love on earth that comes close to what we felt in heaven—parental love. Families are also the best way to preserve and pass on moral virtues and true principles that are most likely to lead us back to God’s presence.`,
-                    description:'He talks about the plan of salvation. I thought it was great to here a Apsolte of the Lord speak in such a concise way about the plan. He beautifully painted the picture. He then goes on to speak of gathering the people who dont know the plan, specifically those who have passed on',
-                    rating:6
+                    "book":"3 Nephi",
+                    "chapter":"3",
+                    "verses":"12",
+                    "scripture":"12 Now behold, this Lachoneus, the governor, was a just man, and could not be frightened by the demands and the threatenings of a robber; therefore he did not hearken to the epistle of Giddianhi, the governor of the robbers, but he did cause that his people should cry unto the Lord for strength against the time that the robbers should come down against them.",
+                    "description":"Satan is without purpose, and if you are lead by him you also have no purpose or direction. Hell at least partly includes limibo of not knowing where to go",
+                    "rating":4
                 },
                 {
-                    book:'Mormon',
-                    chapter:'5',
-                    verses:'18',
-                    scripture:`12 Now behold, this Lachoneus, the governor, was a just man, and could not be frightened by the demands and the threatenings of a robber; therefore he did not hearken to the epistle of Giddianhi, the governor of the robbers, but he did cause that his people should cry unto the Lord for strength against the time that the robbers should come down against them.`,
-                    description:'When oppositionarise be sure to call unto the lord immediatly',
-                    rating:4
+                    "book":"1 Nephi",
+                    "chapter":"8",
+                    "verses":"24-28",
+                    "scripture":"I think that it is important to note that just partaking of the love of god or the atonement is not enough to stay, we must fall down and not let our hearts care out the world opinon of us if we are to make it.",
+                    "description":"",
+                    "rating":4
                 },
                 {
-                    book:'1 Nephi',
-                    chapter:'8',
-                    verses:'5-8',
-                    scripture:``,
-                    description:'When Lehi starts his vision of the tree of life a man in a white robe bids him to follow him. It isnt long after that he finds himself in a dark and dreary waste. He then prays to find a way out, when he does he can see a large and spacious field. I beleive this fits with the premortal life and it is not until we pray that we can find our way out to see the goall or eternal life.',
-                    rating:8
-                }
-            ]
-        },
-        {
-            tag:['converted','faith'],
-            content:[
-                {
-                    book:'3 Nephi',
-                    chapter:'3',
-                    verses:'12',
-                    scripture:`12 Now behold, this Lachoneus, the governor, was a just man, and could not be frightened by the demands and the threatenings of a robber; therefore he did not hearken to the epistle of Giddianhi, the governor of the robbers, but he did cause that his people should cry unto the Lord for strength against the time that the robbers should come down against them.`,
-                    description:'Satan is without purpose, and if you are lead by him you also have no purpose or direction. Hell at least partly includes limibo of not knowing where to go',
-                    rating:4
+                    "book":"Ether",
+                    "chapter":"12",
+                    "verses":"4",
+                    "scripture":"4 Wherefore, whoso believeth in God might with surety hope for a better world, yea, even a place at the right hand of God, which hope cometh of faith, maketh an anchor to the souls of men, which would make them sure and steadfast, always abounding in good works, being led to glorify God",
+                    "description":"The faith in eternal life with god, $maketh an anchor to the souls of men$ allows men to have the strength to be steadfast. Which means we need to strengthen our faith in that.",
+                    "rating":4
                 },
                 {
-                    book:'1 Nephi',
-                    chapter:'8',
-                    verses:'24-28',
-                    scripture:`I think that it is important to note that just partaking of the love of god or the atonement is not enough to stay, we must fall down and not let our hearts care out the world opinon of us if we are to make it.`,
-                    description:'',
-                    rating:4
+                    "book":"Ether",
+                    "chapter":"12",
+                    "verses":"6-8",
+                    "description":"Here moroni is proving that through faith all things are possible. He later goes on to tell how thouhg the brother of jared saw Jehovah. I believe Moroni is even saying that we to could not be kept within the veil if we would but have faith. How cool is that?",
+                    "rating":4
                 },
                 {
-                    book:'Ether',
-                    chapter:'12',
-                    verses:'4',
-                    scripture:`4 Wherefore, whoso believeth in God might with surety hope for a better world, yea, even a place at the right hand of God, which hope cometh of faith, maketh an anchor to the souls of men, which would make them sure and steadfast, always abounding in good works, being led to glorify God`,
-                    description:'The faith in eternal life with god, "maketh an anchor to the souls of men" allows men to have the strength to be steadfast. Which means we need to strengthen our faith in that.',
-                    rating:4
+                    "book":"Romans",
+                    "chapter":"6",
+                    "verses":"18-",
+                    "description":"This is a great example and definition of perfect faith.  Abraham did not doubt even when the world said he should, rather agianst all odds he decided that he would believe",
+                    "rating":7
+                }
+            ]
+        },
+        {
+            "tag":["priesthood"],
+            "content":[
+                {
+                    "book":"Acts",
+                    "chapter":"6",
+                    "verses":"4-8",
+                    "description":"It was not until after sthephen had hands laid upon him that the account of miracles began. He was a great man of faith that had the holy ghost. Follows the pattern in this church",
+                    "rating":5
+                }
+            ]
+        },
+        {
+            "tag":["ressurection"],
+            "content":[
+                {
+                    "book":"Phillppians",
+                    "chapter":"3",
+                    "verses":"21",
+                    "description":"This is a great scripture about the ressurection. It states that we can receive a body like christ, through the power of christ how cool is that",
+                    "rating":5
+                }
+            ]
+        },
+        {
+            "tag":["patience"],
+            "content":[
+                {
+                    "book":"1 Nephi",
+                    "chapter":"17",
+                    "verses":"2",
+                    "scripture":"",
+                    "description":"I see the principle here that sometimes it takes time to get to the burdens we are called to bear, bu in the process of doing those things the lord will bless them with the stregth to accomplish them.",
+                    "rating":4
+                }
+            ]
+        },
+        {
+            "tag":["Spirtual Knowledge"],
+            "content":[
+                {
+                    "book":"1 Nephi",
+                    "chapter":"18",
+                    "verses":"10",
+                    "scripture":"",
+                    "description":"Nehpi knows god and he knows that being struch down by inquity is a possiblity here. Especially since he is is from old testament times.",
+                    "rating":5
+                }
+            ]
+        },
+        {
+            "tag":["self control","displine"],
+            "content":[
+                {
+                    "book":"1 Corinthians",
+                    "chapter":"9",
+                    "verses":"24-27",
+                    "scripture":"",
+                    "description":"We must school ourselves like a professional athlete schools his body, by doing this we should be in a better posistion to have eternal life",
+                    "rating":5
+                }
+            ]
+        },
+        {
+            "tag":["scriptures","revelation"],
+            "content":[
+                {
+                    "book":"1 Nephi",
+                    "chapter":"19",
+                    "verses":"18-22",
+                    "scripture":"",
+                    "description":"Nephi in these verses expresses that the lord works same today, tommorow, and yesterday, becuase he like the prohets of old can recieve revelation concerning christ. he also uses the prophets of old to teach his brethen. The scriptures are valuable in teaching both principles.",
+                    "rating":6
+                }
+            ]
+        },
+        {
+            "tag":["immorality","fornication"],
+            "content":[
+                {
+                    "book":"1 Corinthains",
+                    "chapter":"6",
+                    "verses":"12-18",
+                    "scripture":"",
+                    "description":"Pual paints a very clear picture of way immorality is wrong using reasons not usally used. If we are members in christ would we make a part of christ prostitute. Nope! His is our caregiver and we should not defile him or his body which we are a part of.",
+                    "rating":5
+                }
+            ]
+        },
+
+        {
+            "tag":["church organization, revelation"],
+            "content":[
+                {
+                    "book":"Acts",
+                    "chapter":"1",
+                    "verses":"23-26",
+                    "description":"The early apostles used lots and prayers in order to determine which apostle was to be chossen next. Makes me wonder if it is not so much as important of how we seek revelation, but the desire of our heart, what we ask for and the faith that is present. Prayer is a common factor though.",
+                    "rating":6
                 },
                 {
-                    book:'Ether',
-                    chapter:'12',
-                    verses:'6-8',
-                    scripture:`6 And now, I, Moroni, would speak somewhat concerning these things; I would show unto the world that faith is things which are hoped for and not seen; wherefore, dispute not because ye see not, for ye receive no witness until after the trial of your faith.
-
-                    7 For it was by faith that Christ showed himself unto our fathers, after he had risen from the dead; and he showed not himself unto them until after they had faith in him; wherefore, it must needs be that some had faith in him, for he showed himself not unto the world.
-
-                    8 But because of the faith of men he has shown himself unto the world, and glorified the name of the Father, and prepared a way that thereby others might be partakers of the heavenly gift, that they might hope for those things which they have not seen.`,
-                    description:'Here moroni is proving that through faith all things are possible. He later goes on to tell how thouhg the brother of jared saw Jehovah. I believe Moroni is even saying that we to could not be kept within the veil if we would but have faith. How cool is that?',
-                    rating:4
+                    "book":"1 Nephi",
+                    "chapter":"10",
+                    "verses":"17-19",
+                    "scripture":"",
+                    "description":"Nephi here gets excited about lehis vision and knows exactly where to go to find more infomartion and know more fully. In contrast to Laman and Lemuel in chapter 15 who are frustrated becuase they dont know the meaning of the vision because they $knew not the dealings of the god who had created them$. Nephi knew through his revelation and also becuase he knew Gods history or in other words the scripture",
+                    "rating":6
+                }
+            ]
+        },
+        {
+            "tag":["church organization", "revelation"],
+            "content":[
+                {
+                    "book":"Mormom",
+                    "chapter":"9",
+                    "verses":"21",
+                    "scripture":"21 Behold, I say unto you that whoso believeth in Christ, doubting nothing, whatsoever he shall ask the Father in the name of Christ it shall be granted him; and this promise is unto all, even unto the ends of the earth.",
+                    "description":"Moroni Goe sout of his way to mention that the promise is to all the earth, meaning if we have faith nothing doubting we to can recieve. I fits with the chapter idea of mircles only stop when doubt increases.",
+                    "rating":6
+                }
+            ]
+        },
+        {
+            "tag":["church organization"],
+            "content":[
+                {
+                    "book":"1 Corinthians",
+                    "chapter":"6",
+                    "verses":"2-8",
+                    "scripture":"",
+                    "description":"I love this thought because it is mine exactly. I think it would be quite odd to live in zion and then havee to sue. I would rathere just be wrong becuase thus saith the lord vengence is mine and i will repay. We should work on having charity first.",
+                    "rating":6
+                }
+            ]
+        },
+        {
+            "tag":["Commandments","fall"],
+            "content":[
+                {
+                    "book":"Ether",
+                    "chapter":"3",
+                    "verses":"2",
+                    "scripture":"2 O Lord, thou hast said that we must be encompassed about by the floods. Now behold, O Lord, and do not be angry with thy servant because of his weakness before thee; for we know that thou art holy and dwellest in the heavens, and that we are unworthy before thee; because of the fall our natures have become evil continually; nevertheless, O Lord, thou hast given us a commandment that we must call upon thee, that from thee we may receive according to our desires.",
+                    "description":"The Lord is so mericful to everyone of us. We are all fallen and yet he has commanded us to  call upon him for strength. He wants us to ask for help that is how much he loves us",
+                    "rating":6
+                }
+            ]
+        },
+        {
+            "tag":["blacks and the priestood","conteversal","unsure","imperfect"],
+            "content":[
+                {
+                    "book":"Matthew",
+                    "chapter":"10",
+                    "verses":"5-6",
+                    "description":"The could be a parallal here to blacks and the priestood. Why did Christ command this? We are usually not given explenations of commandments, and it it is hard to guess whay a thing is commanded",
+                    "rating":6
                 },
                 {
-                    book:'Romans',
-                    chapter:'6',
-                    verses:'18-',
-                    scripture:`18 Who against hope believed in hope, that he might become the father of many nations, according to that which was spoken, So shall thy seed be.
-
-                    19 And being not weak in faith, he considered not his own body now dead, when he was about an hundred years old, neither yet the deadness of Sara’s womb:
-
-                    20 He staggered not at the promise of God through unbelief; but was strong in faith, giving glory to God;
-
-                    21 And being fully persuaded that, what he had promised, he was able also to perform.
-
-                    22 And therefore it was imputed to him for righteousness.`,
-                    description:'This is a great example and definition of perfect faith.  Abraham did not doubt even when the world said he should, rather agianst all odds he decided that he would believe',
-                    rating:7
+                    "book":"Acts",
+                    "chapter":"16",
+                    "verses":"3",
+                    "scripture":"3 Him would Paul have to go forth with him; and took and circumcised him because of the Jews which were in those quarters: for they knew all that his father was a Greek.",
+                    "description":"We just got through the chapters that said circumsicion was not necassary, but Pual has Timothy circumsiced any way. ? This is an example of helping the people understand. In this case helping the Jews listen without conversity of circumcision, since Christ not circumsision is their main message.",
+                    "rating":4
                 }
             ]
         },
         {
-            tag:['priesthood'],
-            content:[
+            "tag":["Missionary Work"],
+            "content":[
                 {
-                    book:'Acts',
-                    chapter:'6',
-                    verses:'4-8',
-                    scripture:`6 Whom they set before the apostles: and when they had prayed, they laid their hands on them.
-
-                    7 And the word of God increased; and the number of the disciples multiplied in Jerusalem greatly; and a great company of the priests were obedient to the faith.
-
-                    8 And Stephen, full of faith and power, did great wonders and miracles among the people.`,
-                    description:'It was not until after sthephen had hands laid upon him that the account of miracles began. He was a great man of faith that had the holy ghost. Follows the pattern in this church',
-                    rating:5
+                    "book":"Acts",
+                    "chapter":"17",
+                    "verses":"22-27",
+                    "description":"Paul starts where they are and teches from there. He starts with the fact they are religious and are already wordhipping an $unknown god$. Building on this he declares this unknown god they are worshipping is God, but does correct them for using idols",
+                    "rating":6
                 }
             ]
         },
         {
-            tag:['ressurection'],
-            content:[
+            "tag":["mercy", "forgiveness","Church discpline"],
+            "content":[
                 {
-                    book:'Phillppians',
-                    chapter:'3',
-                    verses:'21',
-                    scripture:``,
-                    description:'This is a great scripture about the ressurection. It states that we can receive a body like christ, through the power of christ how cool is that',
-                    rating:5
+                    "book":"Moroni",
+                    "chapter":"6",
+                    "verses":"7-8",
+                    "description":"The words as oft say that everytime we seek forgiveness with real intent we may be forgiven. This scripture is for those who arre already members of the church. We can be forgiven even if we fall short of our coventents",
+                    "rating":6
                 }
             ]
         },
         {
-            tag:['patience'],
-            content:[
+            "tag":["forgiveness"],
+            "content":[
                 {
-                    book:'1 Nephi',
-                    chapter:'17',
-                    verses:'2',
-                    scripture:``,
-                    description:'I see the principle here that sometimes it takes time to get to the burdens we are called to bear, bu in the process of doing those things the lord will bless them with the stregth to accomplish them.',
-                    rating:4
+                    "book":"2 Corinthains",
+                    "chapter":"2",
+                    "verses":"5-11",
+                    "scripture":"",
+                    "description":"Paul, like Christ and other prophets teach that we should forgive everyone. Here Paul uses charity for the transgressor as the reasaon to forgive, but the princpple of forgive always still stands.",
+                    "rating":6
                 }
             ]
         },
         {
-            tag:['Spirtual Knowledge'],
-            content:[
+            "tag":["prophets as human"],
+            "content":[
                 {
-                    book:'1 Nephi',
-                    chapter:'18',
-                    verses:'10',
-                    scripture:``,
-                    description:'Nehpi knows god and he knows that being struch down by inquity is a possiblity here. Especially since he is is from old testament times.',
-                    rating:5
+                    "book":"Acts",
+                    "chapter":"28",
+                    "verses":"",
+                    "description":"This is a good example of prophet being a wise steward, no body die, but it was still unwise to have set sail as they ended up in stranded on an island",
+                    "rating":6
                 }
             ]
         },
         {
-            tag:['self control','displine'],
-            content:[
+            "tag":["Humility","stregthen each other"],
+            "content":[
                 {
-                    book:'1 Corinthians',
-                    chapter:'9',
-                    verses:'24-27',
-                    scripture:'',
-                    description:'We must school ourselves like a professional athlete schools his body, by doing this we should be in a better posistion to have eternal life',
-                    rating:5
-                }
-            ]
-        },
-        {
-            tag:['scriptures','revelation'],
-            content:[
-                {
-                    book:'1 Nephi',
-                    chapter:'19',
-                    verses:'18-22',
-                    scripture:'',
-                    description:'Nephi in these verses expresses that the lord works same today, tommorow, and yesterday, becuase he like the prohets of old can recieve revelation concerning christ. he also uses the prophets of old to teach his brethen. The scriptures are valuable in teaching both principles.',
-                    rating:6
-                }
-            ]
-        },
-        {
-            tag:['immorality','fornication'],
-            content:[
-                {
-                    book:'1 Corinthains',
-                    chapter:'6',
-                    verses:'12-18',
-                    scripture:``,
-                    description:'Pual paints a very clear picture of way immorality is wrong using reasons not usally used. If we are members in christ would we make a part of christ prostitute. Nope! His is our caregiver and we should not defile him or his body which we are a part of.',
-                    rating:5
-                }
-            ]
-        },
-        {
-            tag:['prophets','resortoration'],
-            content:[
-                {
-                    talk:'Prophets',
-                    author:'Elder LeGrand Richards',
-                    quote:`Thus, one looking for truth would look for a restitution and not a reformation, and not a continuation, because if Peter was a prophet of God, we have to have a restitution of all things spoken by the mouth of all the holy prophets before the Savior would come, because he said the heavens were to receive the Christ “until the times of restitution of all things.” There couldn’t be a restitution unless there were a living prophet upon the earth unto whom these holy prophets could come to restore the things that had been lost, whereby the churches were teaching the commandments of men, as Isaiah said. And so we have a living prophet.`,
-                    description:'A very well done talk describing that the restoration must needd talk place. An apostle first lesson',
-                    rating:9
-                }
-            ]
-        },
-        {
-            tag:['church organization, revelation'],
-            content:[
-                {
-                    book:'Acts',
-                    chapter:'1',
-                    verses:'23-26',
-                    scripture:`23 And they appointed two, Joseph called Barsabas, who was surnamed Justus, and Matthias.
-
-                    24 And they prayed, and said, Thou, Lord, which knowest the hearts of all men, shew whether of these two thou hast chosen,
-
-                    25 That he may take part of this ministry and apostleship, from which Judas by transgression fell, that he might go to his own place.
-
-                    26 And they gave forth their lots; and the lot fell upon Matthias; and he was numbered with the eleven apostles.`,
-                    description:'The early apostles used lots and prayers in order to determine which apostle was to be chossen next. Makes me wonder if it is not so much as important of how we seek revelation, but the desire of our heart, what we ask for and the faith that is present. Prayer is a common factor though.',
-                    rating:6
+                    "book":"Romans",
+                    "chapter":"1",
+                    "verses":"11-12",
+                    "description":"I love that even though this is the last letter that Pual right, and he is a leader of the church, he still has the humlility that he can learn from others. We need to be humble just like that so that we can learn until the time we die.",
+                    "rating":5
                 },
                 {
-                    book:'1 Nephi',
-                    chapter:'10',
-                    verses:'17-19',
-                    scripture:``,
-                    description:'Nephi here gets excited about lehis vision and knows exactly where to go to find more infomartion and know more fully. In contrast to Laman and Lemuel in chapter 15 who are frustrated becuase they dont know the meaning of the vision because they "knew not the dealings of the god who had created them". Nephi knew through his revelation and also becuase he knew Gods history or in other words the scripture',
-                    rating:6
+                    "book":"Romans",
+                    "chapter":"12",
+                    "verses":"4-8",
+                    "description":"These scriptures are often used to humble us to know that every calling of the lord is important. I think It can be broder than that. Like some have the gift to be happy, righteous or ful of faith. We need to do less judging each other and just try to help each other with that gift.",
+                    "rating":6
                 }
             ]
         },
         {
-            tag:['church organization', 'revelation'],
-            content:[
+            "tag":["wickedness", "conquences"],
+            "content":[
                 {
-                    book:'Mormom',
-                    chapter:'9',
-                    verses:'21',
-                    scripture:`21 Behold, I say unto you that whoso believeth in Christ, doubting nothing, whatsoever he shall ask the Father in the name of Christ it shall be granted him; and this promise is unto all, even unto the ends of the earth.`,
-                    description:'Moroni Goe sout of his way to mention that the promise is to all the earth, meaning if we have faith nothing doubting we to can recieve. I fits with the chapter idea of mircles only stop when doubt increases.',
-                    rating:6
+                    "book":"Romans",
+                    "chapter":"1",
+                    "verses":"27-28",
+                    "description":"At the end of verse 27, there is an assigned punishment for sin, in this case same-gender fornicaiton, there are direct concquences for that sin. In 28, it paints a picture that god lets those punishments happen to people, meaning he could prevent them. We need to choose righteously and pray for help in overcominig the concquences of sin",
+                    "rating":5
                 }
             ]
         },
         {
-            tag:['church organization'],
-            content:[
+            "tag":["context","One in Christ","unity"],
+            "content":[
                 {
-                    book:'1 Corinthians',
-                    chapter:'6',
-                    verses:'2-8',
-                    scripture:``,
-                    description:'I love this thought because it is mine exactly. I think it would be quite odd to live in zion and then havee to sue. I would rathere just be wrong becuase thus saith the lord vengence is mine and i will repay. We should work on having charity first.',
-                    rating:6
+                    "book":"Ephesians",
+                    "chapter":"2",
+                    "verses":"16-20",
+                    "scripture":"",
+                    "description":"We are all one in christ jew and gentils with christ being the key corner stone. The context is that paul is saying to jews and gentiales are one.",
+                    "rating":5
                 }
             ]
         },
         {
-            tag:['Commandments','fall'],
-            content:[
+            "tag":["One Bpdy","One in Christ","unity"],
+            "content":[
                 {
-                    book:'Ether',
-                    chapter:'3',
-                    verses:'2',
-                    scripture:`2 O Lord, thou hast said that we must be encompassed about by the floods. Now behold, O Lord, and do not be angry with thy servant because of his weakness before thee; for we know that thou art holy and dwellest in the heavens, and that we are unworthy before thee; because of the fall our natures have become evil continually; nevertheless, O Lord, thou hast given us a commandment that we must call upon thee, that from thee we may receive according to our desires.`,                  description:'Moroni Goe sout of his way to mention that the promise is to all the earth, meaning if we have faith nothing doubting we to can recieve. I fits with the chapter idea of mircles only stop when doubt increases.',
-                    description:'The Lord is so mericful to everyone of us. We are all fallen and yet he has commanded us to  call upon him for strength. He wants us to ask for help that is how much he loves us',
-                    rating:6
+                    "book":"Ephesians",
+                    "chapter":"4",
+                    "verses":"1-16",
+                    "scripture":"",
+                    "description":"The body of christ. We are all one in christ and we should use are gifts to help one another as this is way they are given to stregthen christ",
+                    "rating":3
                 }
             ]
         },
         {
-            tag:['blacks and the priestood','conteversal','unsure','imperfect'],
-            content:[
+            "tag":["generosity"],
+            "content":[
                 {
-                    book:'Matthew',
-                    chapter:'10',
-                    verses:'5-6',
-                    scripture:`5 These twelve Jesus sent forth, and commanded them, saying, Go not into the way of the Gentiles, and into any city of the Samaritans enter ye not:
-
-                    6 But go rather to the lost sheep of the house of Israel.`,
-                    description:'The could be a parallal here to blacks and the priestood. Why did Christ command this? We are usually not given explenations of commandments, and it it is hard to guess whay a thing is commanded',
-                    rating:6
-                },
-                {
-                    book:'Acts',
-                    chapter:'16',
-                    verses:'3',
-                    scripture:`3 Him would Paul have to go forth with him; and took and circumcised him because of the Jews which were in those quarters: for they knew all that his father was a Greek.`,
-                    description:'We just got through the chapters that said circumsicion was not necassary, but Pual has Timothy circumsiced any way. ? This is an example of helping the people understand. In this case helping the Jews listen without conversity of circumcision, since Christ not circumsision is their main message.',
-                    rating:4
-                },
-            ]
-        },
-        {
-            tag:['Missionary Work'],
-            content:[
-                {
-                    book:'Acts',
-                    chapter:'17',
-                    verses:'22-27',
-                    scripture:`2 ¶ Then Paul stood in the midst of Mars’ hill, and said, Ye men of Athens, I perceive that in all things ye are too superstitious.
-
-                    23 For as I passed by, and beheld your devotions, I found an altar with this inscription, TO THE UNKNOWN GOD. Whom therefore ye ignorantly worship, him declare I unto you.
-
-                    24 God that made the world and all things therein, seeing that he is Lord of heaven and earth, dwelleth not in temples made with hands;
-
-                    25 Neither is worshipped with men’s hands, as though he needed any thing, seeing he giveth to all life, and breath, and all things;
-
-                    26 And hath made of one blood all nations of men for to dwell on all the face of the earth, and hath determined the times before appointed, and the bounds of their habitation;
-
-                    27 That they should seek the Lord, if haply they might feel after him, and find him, though he be not far from every one of us:`,
-                    description:'Paul starts where they are and teches from there. He starts with the fact they are religious and are already wordhipping an "unknown god". Building on this he declares this unknown god they are worshipping is God, but does correct them for using idols',
-                    rating:6
+                    "book":"2 Corinthains",
+                    "chapter":"8",
+                    "verses":"1-8",
+                    "scripture":"",
+                    "description":"I love that we should not only give but we should be excited to give, then in verse 8 that christ gave all so we too should be willing to give all",
+                    "rating":5
                 }
             ]
         },
         {
-            tag:['mercy', 'forgiveness','Church discpline'],
-            content:[
+            "tag":["no law"],
+            "content":[
                 {
-                    book:'Moroni',
-                    chapter:'6',
-                    verses:'7-8',
-                    scripture:`7 And they were strict to observe that there should be no iniquity among them; and whoso was found to commit iniquity, and three witnesses of the church did condemn them before the elders, and if they repented not, and confessed not, their names were blotted out, and they were not numbered among the people of Christ.
-
-                    8 But as oft as they repented and sought forgiveness, with real intent, they were forgiven.`,
-                    description:'The words as oft say that everytime we seek forgiveness with real intent we may be forgiven. This scripture is for those who arre already members of the church. We can be forgiven even if we fall short of our coventents',
-                    rating:6
+                    "book":"Romans",
+                    "chapter":"2",
+                    "verses":"15",
+                    "scripture":"15 Which shew the work of the law written in their hearts, their conscience also bearing witness, and their thoughts the mean while accusing or else excusing one another;)",
+                    "description":"This in the New Revised Standard Version, reads clear, but It fits with with the book of mormon when it says by the laws ye have those are the law you will be judged by. out of these "book"s will they be judged ",
+                    "rating":5
                 }
             ]
         },
         {
-            tag:['forgiveness'],
-            content:[
+            "tag":["obediance"],
+            "content":[
                 {
-                    book:'2 Corinthains',
-                    chapter:'2',
-                    verses:'5-11',
-                    scripture:``,
-                    description:'Paul, like Christ and other prophets teach that we should forgive everyone. Here Paul uses charity for the transgressor as the reasaon to forgive, but the princpple of forgive always still stands.',
-                    rating:6
+                    "book":"1 Nephi",
+                    "chapter":"2",
+                    "verses":"3",
+                    "scripture":"3 And it came to pass that he was obedient unto the word of the Lord, wherefore he did as the Lord commanded him.",
+                    "description":"The scripure points out the Lehi was in the state of obediance therefore he was obediant to this commandment. I beleive that we need to reach this state of obediance in our own lives",
+                    "rating":5
                 }
             ]
         },
         {
-            tag:['prophets as human'],
-            content:[
+            "tag":["armor","faith","prepare"],
+            "content":[
                 {
-                    book:'Acts',
-                    chapter:'28',
-                    verses:'',
-                    scripture:`9 Now when much time was spent, and when sailing was now dangerous, because the fast was now already past, Paul admonished them,
-
-                    10 And said unto them, Sirs, I perceive that this voyage will be with hurt and much damage, not only of the lading and ship, but also of our lives.`,
-                    description:'This is a good example of prophet being a wise steward, no body die, but it was still unwise to have set sail as they ended up in stranded on an island',
-                    rating:6
+                    "book":"Ephesians",
+                    "chapter":"6",
+                    "verses":"1-20",
+                    "scripture":"",
+                    "description":"This is what I got out of the armor of god this time. The whole armor of god. It is our faith and our commitment to righteousness that stops the fiery darts of the advesary. It saves us from commiting sin. The feet must be prepared to move and share the gospel. This is how we move forward in the gospel and avoid temptations. The helment is of salvation, meaning we our thoughts and words focused on salvation through christ. And we should have truth at our core with the belt of truth",
+                    "rating":5
                 }
             ]
         },
         {
-            tag:['Humility','stregthen each other'],
-            content:[
+            "tag":["humilty","one mind","christ example","condensation"],
+            "content":[
                 {
-                    book:'Romans',
-                    chapter:'1',
-                    verses:'11-12',
-                    scripture:`11 For I long to see you, that I may impart unto you some spiritual gift, to the end ye may be established;
-
-                    12 That is, that I may be comforted together with you by the mutual faith both of you and me.`,
-                    description:'I love that even though this is the last letter that Pual right, and he is a leader of the church, he still has the humlility that he can learn from others. We need to be humble just like that so that we can learn until the time we die.',
-                    rating:5
-                },
-                {
-                    book:'Romans',
-                    chapter:'12',
-                    verses:'4-8',
-                    scripture:`11 For I long to see you, that I may impart unto you some spiritual gift, to the end ye may be established;
-
-                    12 That is, that I may be comforted together with you by the mutual faith both of you and me.`,
-                    description:'These scriptures are often used to humble us to know that every calling of the lord is important. I think It can be broder than that. Like some have the gift to be happy, righteous or ful of faith. We need to do less judging each other and just try to help each other with that gift.',
-                    rating:6
+                    "book":"philippians",
+                    "chapter":"2",
+                    "verses":"1-10",
+                    "scripture":"",
+                    "description":"What a great scriputre one how christians should treat each other. WE should all be of one mind any way and that mind is no ones, but is christ. This illistrates also how christ is the perferct example in humility for us.",
+                    "rating":5
                 }
             ]
         },
         {
-            tag:['wickedness', 'conquences'],
-            content:[
+            "tag":["13th Article of Faith","Seek Good","Good Things"],
+            "content":[
                 {
-                    book:'Romans',
-                    chapter:'1',
-                    verses:'27-28',
-                    scripture:`27 And likewise also the men, leaving the natural use of the woman, burned in their lust one toward another; men with men working that which is unseemly, and receiving in themselves that recompence of their error which was meet.
-
-                    28 And even as they did not like to retain God in their knowledge, God gave them over to a reprobate mind, to do those things which are not convenient;`,
-                    description:'At the end of verse 27, there is an assigned punishment for sin, in this case same-gender fornicaiton, there are direct concquences for that sin. In 28, it paints a picture that god lets those punishments happen to people, meaning he could prevent them. We need to choose righteously and pray for help in overcominig the concquences of sin',
-                    rating:5
-                }
-            ]
-        },
-        {
-            tag:['context','One in Christ','unity'],
-            content:[
-                {
-                    book:'Ephesians',
-                    chapter:'2',
-                    verses:'16-20',
-                    scripture:``,
-                    description:'We are all one in christ jew and gentils with christ being the key corner stone. The context is that paul is saying to jews and gentiales are one.',
-                    rating:5
-                }
-            ]
-        },
-        {
-            tag:['One Bpdy','One in Christ','unity'],
-            content:[
-                {
-                    book:'Ephesians',
-                    chapter:'4',
-                    verses:'1-16',
-                    scripture:``,
-                    description:'The body of christ. We are all one in christ and we should use are gifts to help one another as this is way they are given to stregthen christ',
-                    rating:3
-                }
-            ]
-        },
-        {
-            tag:['generosity'],
-            content:[
-                {
-                    book:'2 Corinthains',
-                    chapter:'8',
-                    verses:'1-8',
-                    scripture:``,
-                    description:'I love that we should not only give but we should be excited to give, then in verse 8 that christ gave all so we too should be willing to give all',
-                    rating:5
-                }
-            ]
-        },
-        {
-            tag:['no law'],
-            content:[
-                {
-                    book:'Romans',
-                    chapter:'2',
-                    verses:'15',
-                    scripture:`15 Which shew the work of the law written in their hearts, their conscience also bearing witness, and their thoughts the mean while accusing or else excusing one another;)`,
-                    description:'This in the New Revised Standard Version, reads clear, but It fits with with the book of mormon when it says by the laws ye have those are the law you will be judged by. out of these books will they be judged ',
-                    rating:5
-                }
-            ]
-        },
-        {
-            tag:['obediance'],
-            content:[
-                {
-                    book:'1 Nephi',
-                    chapter:'2',
-                    verses:'3',
-                    scripture:`3 And it came to pass that he was obedient unto the word of the Lord, wherefore he did as the Lord commanded him.`,
-                    description:'The scripure points out the Lehi was in the state of obediance therefore he was obediant to this commandment. I beleive that we need to reach this state of obediance in our own lives',
-                    rating:5
+                    "book":"philippians",
+                    "chapter":"4",
+                    "verses":"8-9",
+                    "scripture":"",
+                    "description":"This is where we get the 13th Article of faith. You can say we follow the teachings of Paul. Cross Referance all good things come from God",
+                    "rating":2
                 }
             ]
         }
