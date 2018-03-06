@@ -1,0 +1,7 @@
+<div class="simple-input">
+  <mat-form-field>
+    <input placeholder="Save As" autocomplete="off" matInput [(ngModel)]="title">
+  </mat-form-field>
+</div>
+<button mat-raised-button (click)="dialogRef.close(title)">Save</button>
+<button mat-raised-button mat-dialog-close>Cancel</button>
