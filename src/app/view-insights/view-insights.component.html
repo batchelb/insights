@@ -1,5 +1,5 @@
-<div class="view">
-  <div class="container" [class.nontransform]="!showStoryBoard" [class.transform]="showStoryBoard" droppable>
+<div class="view" (dragover)="debounce.next(['notOverInsight'])">
+  <div class="container" [class.nontransform]="!showStoryBoard" [class.transform]="showStoryBoard">
     <div class="view-insight">
       <div class="upper-half">
         <div class="titles">
@@ -8,15 +8,22 @@
             <div class="back" routerLink="/create"><i class="material-icons">chevron_left</i> Create Insights</div>
           </div>
           <div class="right" *ngIf="showStoryBoard">
-              <div class="title">Create Story Board</div>
-              <div class="back" (click)="showStoryBoard = false"><i class="material-icons">chevron_left</i> View Insights</div>
+              <div class="title">{{selectedStoryboard.storyboardName || 'Create Story Board'}}</div>
+              <div class="back" (click)="showStoryBoard = delayShowStoryBoard = false"><i class="material-icons">chevron_left</i> View {{selectedStoryboard.storyboardName ? 'Story Boards': 'Insights'}}</div>
+              <div class="story-board-buttons" *ngIf="delayShowStoryBoard">
+                  <button mat-raised-button (click)="saveStoryBoard()">{{selectedStoryboard.storyboardName ? 'Update Story Board': 'Create Story Board'}}</button>
+                  <button mat-raised-button (click)="wordDownload()">Download Talk</button>
+                  <button mat-raised-button (click)="storyBoardInsights = storyBoardRows = []">Clear Story Board</button>
+                  <button mat-raised-button (click)="imageDownload()">Save as Image</button>
+                  <button mat-raised-button (click)="deleteStoryBoard()">Delete Story Board</button>
+              </div>
           </div>
         </div>
           <div class="search">
           <mat-form-field>
-            <input matInput placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="filterInsights()">
+            <input matInput placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="filter()">
           </mat-form-field>
-          <mat-form-field class="tags">
+          <mat-form-field class="tags" *ngIf="isViewInsights">
             <input matInput autocomplete="off" placeholder="Search Tags" [matAutocomplete]="auto" [(ngModel)]="selectedTag" (ngModelChange)="selectTag()">
             <mat-autocomplete #auto="matAutocomplete">
               <mat-option *ngFor="let tag of filteredTags" [value]="tag">
@@ -26,51 +33,63 @@
           </mat-form-field>
         </div>
       </div>
-      <div class="bottom-half">
-          <div class="table-container">
-            <div class="header-row row">
-              <div class="cell header-cell" *ngFor="let header of attributes" [style.flex]="header === 'insight' ?  '0 0 40%' : '1 1 0'">
-                {{ header | capitalize }}
-              </div>
-              <div class="cell button"></div>
+      <div class="bottom-half" *ngIf="isViewInsights">
+        <div class="table-container">
+          <div class="header-row row">
+            <div class="cell header-cell" *ngFor="let header of attributes" [style.flex]="header === 'insight' ?  '0 0 40%' : '1 1 0'">
+              {{ header | capitalize }}
             </div>
-            <div class="data-rows">
-              <div class="data-row row" draggable (onDragEnd)="droppedOutside = true" *ngFor="let insight of filteredInsights; let i = index" [dragData]="insight"  (mouseenter)="hoverRow = i" (mouseleave)="hoverRow = -1" (click)="viewInsight(insight)">
-                <div class="cell data-cell" *ngFor="let attribute of attributes"  [style.flex]="attribute === 'insight' ?  '0 0 40%' : '1 1 0'" [innerHTML]="insight[attribute]"></div>
-                <div class="cell button"><button mat-button (click)="updateInsight(insight)" [class.hidden]="hoverRow !== i">Edit</button></div>
-              </div>
+            <div class="cell button"></div>
+          </div>
+          <div class="data-rows">
+            <div class="data-row row" draggable (onDragEnd)="droppedOutside = true" *ngFor="let insight of filteredInsights; let i = index" [dragData]="insight"  (mouseenter)="hoverRow = i" (mouseleave)="hoverRow = -1" (click)="viewInsight(insight)">
+              <div class="cell data-cell" *ngFor="let attribute of attributes"  [style.flex]="attribute === 'insight' ?  '0 0 40%' : '1 1 0'" [innerHTML]="insight[attribute]"></div>
+              <div class="cell button"><button mat-button (click)="updateInsight(insight)" [class.hidden]="hoverRow !== i">Edit</button></div>
             </div>
+          </div>
         </div>
-        <div class="holder" droppable (onDrop)="drop($event.dragData)"  [class.transformy]="showStoryBoard">
+        <div class="holder" droppable (onDrop)="drop($event.dragData || dragCopy)"  [class.transformy]="showStoryBoard">
           <div class="row sub-title">
             <span>Story Board</span>
-            <button class="button" mat-button *ngIf="!showStoryBoard" (click)="showStoryBoard = true">Create</button>
+            <button class="button" mat-button *ngIf="!showStoryBoard" (click)="goStoryBoard()">Create</button>
           </div>
-          <div class="row" *ngFor="let insight of SBInsights; let i = index" droppable draggable [dragData]="insight" (onDragEnd)="drag(insight)"  (onDrop)="drop($event.dragData,i)"> {{insight.book + ' ' + insight.chapter + ':' + insight.verses}}</div>
+          <div class="row" *ngFor="let insight of SBInsights; let i = index" droppable draggable (onDragStart)="draggingInsight = dragCopy = fromBank =  insight" (onDragEnd)="drag(insight)"  (onDrop)="drop(dragCopy,i)"> {{insight.book + ' ' + insight.chapter + ':' + insight.verses}}</div>
         </div>
       </div>
-    </div>
-    <!-- <div class="story-board-container"> -->
-      <div class="story-board" droppable (onDrop)="storyBoardPlace($event)" #storyBoard>
-        <div class="story-board-row" (dragleave)="remove()" *ngFor="let row of storyBoardRows; let i = index" [class.connect-top-row]="i" [class.connect-bottom-row]="i !== storyBoardRows.length -1">
-          <div class="connect-top" *ngIf="i"></div>
-            <div class="insights" *ngFor="let insight of row; let j = index" droppable (dragenter)="insertDraggingInsight(insight)" [class.opac]="draggingInsight === insight">
-              <div class="panel" *ngIf="insight.insightId" draggable [dragData]="insight" (onDragStart)="draggingInsight = insight" (onDragEnd)="dragEnd(insight)">
-                <div class="tiny-title">{{insight.display}}</div>
-                <div [innerHTML]="insight.insight"></div>
-              </div>
-              <div class="connector" *ngIf="!insight.insightId" draggable [dragData]="insight" (onDragStart)="draggingInsight = insight" (dragend)="dragEnd()">
-                  <textarea placeholder="enter connection thought here" [(ngModel)]="insight.connection"></textarea>
-              </div>
-              <span class="dotted-line" *ngIf="j !== row.length - 1 || i !== storyBoardRows.length - 1">
-                <span class="add-connector" (click)="addConnector(insight)">
-                    <i class="material-icons">add</i>
-                </span>
-              </span>
+      <div class="bottom-half start">
+          <div class="search-storyboard" *ngFor="let storyboard of filteredStoryboards" (click)="loadStoryBoard(storyboard)">
+            <div class="sub-title">{{storyboard.storyboardName}}</div>
+            <div class="content" *ngFor="let insight of storyboard.insights">
+              <span class="story-insights" *ngIf="insight.insightId">{{insight.display}}</span>
+            </div>
           </div>
-          <div class="connect-bottom" *ngIf="i !== storyBoardRows.length - 1"></div>
-        <!-- </div> -->
       </div>
+    </div>
+      <div class="story-board" droppable (onDrop)="storyBoardPlace()" #storyBoard>
+          <div class="story-board-row" droppable (onDrop)="dragCopy = fromBank = draggingInsight = false" *ngFor="let row of storyBoardRows; let i = index" [class.connect-top-row]="i" [class.connect-bottom-row]="i !== storyBoardRows.length -1">
+            <div class="first-add-connector" *ngIf="!i"  (dragover)="debounce.next(['insertDraggingInsight', {}, dragCopy])">
+              <span class="add-connector first" (click)="addConnector()">
+                  <i class="material-icons">add</i>
+              </span>
+            </div>
+            <div class="connect-top" *ngIf="i"></div>
+              <div class="insights" *ngFor="let insight of row; let j = index" (dragover)="debounce.next(['insertDraggingInsight', insight, dragCopy])" [class.opac]="draggingInsight === insight">
+                <div class="panel" *ngIf="insight.insightId" draggable [dragData]="insight" (dragenter)="dragginginsight = dragCopy" (onDragStart)="draggingInsight = dragCopy =  insight">
+                  <div class="tiny-title">{{insight.display}}</div>
+                  <div [innerHTML]="insight.insight"></div>
+                </div>
+                <div class="connector" *ngIf="!insight.insightId" draggable [dragData]="insight" (dragenter)="dragginginsight = dragCopy" (onDragStart)="draggingInsight = dragCopy =  insight">
+                    <textarea placeholder="enter connection thought here" [(ngModel)]="insight.connection"></textarea>
+                </div>
+                <span class="dotted-line" *ngIf="j !== row.length - 1 || i !== storyBoardRows.length - 1">
+                  <span class="add-connector" (click)="addConnector(insight)">
+                      <i class="material-icons">add</i>
+                  </span>
+                </span>
+            </div>
+          <div class="connect-bottom" *ngIf="i !== storyBoardRows.length - 1"></div>
+        </div>
     </div>
   </div>
 </div>
+

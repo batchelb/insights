@@ -7,7 +7,7 @@
     transition: transform 2s;
 }
 .transformy {
-    transform: translateY(-50px);
+    transform: translateY(30px);
     transition: transform 2s;
 }
 .view-insight {
@@ -22,6 +22,37 @@
         display: flex;
         align-items: center;
         width: 100%;
+        &.start{
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding:10px;
+        }
+        .search-storyboard{
+            box-shadow: 2px 3px #221e1e;
+            height: 200px;
+            width:200px;
+            border: 1px solid black;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 20px;
+            // &:hover{
+            //     height: 210px;
+            //     width: 210px;
+            // }
+            .sub-title{
+                border-bottom: 1px solid black;
+                padding: 10px 3px;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                overflow-y:auto;
+                overflow-x: hidden;
+                .story-insights{
+                    margin-left:2px;
+                }
+            }
+        }
         .table-container{
             margin-left: 20px;
             display: flex;
@@ -70,6 +101,7 @@
     .cell {
         padding-right: 3px;
         padding-left: 20px;
+        width: 0px;
     }
     .button {
         flex: 0 0 111px;
@@ -132,7 +164,20 @@
         display: flex;
         justify-content: space-between;
         .right {
-            margin-right: 65px;
+            position: relative;
+            .title, .back {
+                padding-right: 65px;
+            }
+            .story-board-buttons {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                button {
+                    margin: 10px 21px 0px 8px;
+                    width: 250px;
+                }
+            }
         }
     }
 }
@@ -145,6 +190,7 @@
     height: calc(~"100vh - 26px");
     max-width: calc(~"100% - 306px");
     min-width: calc(~"100% - 306px");
+    background: white;
     margin-top: 2px;
     border: 1px black solid;
     padding-left:20px;
@@ -157,13 +203,13 @@
         height: 100px;
         padding-top: 35px;
         padding-bottom: 35px;
-        padding-left:10px;
+        padding-left:35px;
         position: relative;
         display: flex;
         .connect-top {
             position: absolute;
             background: white;
-            width: 12px;
+            width: 36px;
             height: 50%;
             left: -2px;
             bottom: 0;
@@ -184,65 +230,78 @@
             border-right: 2px dashed black;
             border-bottom: 2px dashed black;
         }
-    }
-    .insights {
-        display: flex;
-        align-items: center;
-        height: 100px;
-        width: 250px;
-        &.opac{
-            opacity: .3;
+        .first-add-connector {
+            left: -17px;
+            bottom: 36px;
+            position: absolute;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            width: 52px;
+            align-items: center;
         }
-        .dotted-line{
-            border-bottom: 2px dashed black;
-            height: 2px;
-            width: 50px;
-            position: relative;
-            .add-connector {
-                position: absolute;
-                height: 20px;
-                width: 20px;
-                border: 1px solid black;
-                left: 14px;
-                bottom: -12px;
-                background: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                &:hover {
-                    height: 25px;
-                    transform: height;
-                    width: 25px;
-                    transform: width;
-                    bottom: -14px;
-                    transform: bottom;
-                    left:11px;
-                    transform: left;
-                }
-                i {
-                    font-size:16px;
-                }
+        .add-connector {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border: 1px solid black;
+            left: 14px;
+            bottom: -12px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+                height: 25px;
+                transform: height;
+                width: 25px;
+                transform: width;
+                bottom: -14px;
+                transform: bottom;
+                left:11px;
+                transform: left;
+            }
+            &.first {
+                position: initial;
+            }
+            i {
+                font-size:16px;
             }
         }
-        .panel {
-            border: 1px black solid;
-            border-radius: 3px;
-            box-shadow: 2px 3px #221e1e;
-            width: 198px;
-            height: 98px;
-            padding:5px;
-        }
-        .connector {
-            border: 1px black solid;
-            border-radius: 3px;
-            box-shadow: 2px 3px #221e1e;
-            width: 198px;
-            height: 98px;
-            textarea {
-                border: none;
-                height: 94px;
-                width: 194px;
+        .insights {
+            display: flex;
+            align-items: center;
+            height: 100px;
+            width: 250px;
+            &.opac{
+                opacity: .3;
+            }
+            .dotted-line{
+                border-bottom: 2px dashed black;
+                height: 2px;
+                width: 50px;
+                position: relative;
+            }
+            .panel {
+                border: 1px black solid;
+                border-radius: 3px;
+                box-shadow: 2px 3px #221e1e;
+                width: 198px;
+                height: 98px;
+                padding:5px;
+            }
+            .connector {
+                border: 1px black solid;
+                border-radius: 3px;
+                box-shadow: 2px 3px #221e1e;
+                width: 198px;
+                height: 98px;
+                textarea {
+                    border: none;
+                    height: 94px;
+                    width: 194px;
+                }
             }
         }
     }

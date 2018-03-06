@@ -66,8 +66,7 @@
       <div class="title">{{displayBook}} {{displayChapter}}<span *ngIf="displayVerse">:</span>{{displayVerse}}</div>
       <div class="chapter" *ngFor="let chapter of displayContent; let i = index;">
         <span class="sub-title">Chapter {{displayChapter || i + 1}}</span>
-        <br><br>
-        <div class="verse" *ngFor="let verse of chapter">{{verse}}<br><br></div>
+        <div class="verse" *ngFor="let verse of chapter">{{verse}}</div>
       </div>
   </div>
 </div>

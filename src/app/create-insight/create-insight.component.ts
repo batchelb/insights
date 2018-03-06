@@ -1,11 +1,6 @@
 import { Component, OnInit, OnDestroy, ChangeDetectorRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { CoreService } from '../core.service';
-import * as bm from '../../assets/bookofmormon.json';
-import * as ot from '../../assets/oldtestament.json';
-import * as nt from '../../assets/newtestament.json';
-import * as dc from '../../assets/doctrineandcovenants.json';
-import * as pg from '../../assets/pearlofgreatprice.json';
 
 @Component({
   selector: 'app-create-insight',
@@ -50,11 +45,6 @@ export class CreateInsightComponent implements OnInit, OnDestroy {
   displayChapter = '';
   displayVerse:any = '';
   displayContent:any = '';
-  bm:any = bm;
-  ot:any = ot;
-  nt:any = nt;
-  dc:any = dc;
-  pg:any = pg;
   selectedInsight:any = {};
   toolbar = {
     toolbar: [
@@ -91,31 +81,13 @@ export class CreateInsightComponent implements OnInit, OnDestroy {
     this.displayBook = book.book || '';
     this.changeDisplay();
   }
+  changeDisplay(){
+    this.displayContent = this.coreService.getScriptures(this.displayBook,this.displayChapter,this.displayVerse);
+  }
 
   setVerses(verses){
     this.displayVerse = verses;
     this.changeDisplay();
-  }
-
-  changeDisplay() {
-    if(this.displayBook) {
-      this.displayContent = [...this.ot.books,...this.nt.books,...this.bm.books,...this.dc.books,...this.pg.books].find(bk => bk.book === this.displayBook).chapters.map(chapter => chapter.verses.map((verse,index) => index + 1 + ' ' + verse.text));
-      if(this.displayChapter){
-        this.displayContent = [this.displayContent[+this.displayChapter - 1]];
-        if(this.displayVerse){
-          const verses = (this.displayVerse.includes(',') ? this.displayVerse.split(',') : [this.displayVerse]).map(verse =>
-            verse.includes('-') ? {verse:verse,startVerse:+verse.split('-')[0],endVerse:+verse.split('-')[1]} : {verse:verse}
-          );
-
-          this.displayContent = [this.displayContent[0].filter((verse,index) => {
-            ++index;
-            return verses.some(verseObject => (index >= verseObject.startVerse && index <= verseObject.endVerse) || +verseObject.verse === index || (verseObject.startVerse && !verseObject.endVerse && index >= verseObject.startVerse));
-          })];
-        }
-      }
-    } else {
-      this.displayContent = '';
-    }
   }
 
   changeTag(key){

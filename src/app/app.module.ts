@@ -18,12 +18,14 @@ import { QuillModule } from 'ngx-quill';
 import { ViewInsightsComponent } from './view-insights/view-insights.component';
 import { CapitalizePipe } from './capitalize.pipe';
 import { ViewDetailsComponent } from './view-insights/view-details/view-details.component';
+import { SimpleInputComponent } from './view-insights/simple-input/simple-input.component';
+import { SearchStoryboardsComponent } from './storyboards/search-storyboards/search-storyboards.component';
 
 const appRoutes: Routes = [
   { path: 'create', component: CreateInsightComponent, canActivate: [AuthGuard]},
   { path: 'view', component: ViewInsightsComponent, canActivate: [AuthGuard]},
   { path: 'login', component: LoginComponent },
-  { path: '**', component: CreateInsightComponent, canActivate: [AuthGuard]}
+  { path: '**', component: SearchStoryboardsComponent, canActivate: [AuthGuard]}
 ];
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ const appRoutes: Routes = [
     CreateInsightComponent,
     ViewInsightsComponent,
     CapitalizePipe,
-    ViewDetailsComponent
+    ViewDetailsComponent,
+    SimpleInputComponent,
+    SearchStoryboardsComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +60,6 @@ const appRoutes: Routes = [
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: Interceptor, multi: true }, CoreService, AuthService, AuthGuard],
   bootstrap: [AppComponent],
-  entryComponents:[ViewDetailsComponent]
+  entryComponents:[ViewDetailsComponent, SimpleInputComponent]
 })
 export class AppModule { }

@@ -61,6 +61,14 @@
                     "rating": 5
                 },
                 {
+                    "book":"2 Nephi 26",
+                    "chapter":"26",
+                    "verses":"25",
+                    "scripture":"11 And the night following the Lord stood by him, and said, Be of good cheer, Paul: for as thou hast testified of me in Jerusalem, so must thou bear witness also at Rome.",
+                    "description":"The lord does nothing saves he does it for the benefit of us down here on this world.",
+                    "rating": 5
+                },
+                {
                     "book":"3 Nephi",
                     "chapter":"10",
                     "verses":"4-5",
@@ -74,7 +82,7 @@
                     "description":"The Lord is merciful to those who beleive. The new Testment and Bom of mormon are full of examples like this. The Lord is specifically compassionate to those who specifacally ask. This could be a result of asking requiring faith. ",
                     "rating": 5
                 }
-            ],
+            ]
         },
         {
             "tag":["converted"],
@@ -118,6 +126,14 @@
                     "verses":"12",
                     "scripture":"12 Now behold, this Lachoneus, the governor, was a just man, and could not be frightened by the demands and the threatenings of a robber; therefore he did not hearken to the epistle of Giddianhi, the governor of the robbers, but he did cause that his people should cry unto the Lord for strength against the time that the robbers should come down against them.",
                     "description":"Satan is without purpose, and if you are lead by him you also have no purpose or direction. Hell at least partly includes limibo of not knowing where to go",
+                    "rating":4
+                },
+                {
+                    "book":"2 Timothy",
+                    "chapter":"2",
+                    "verses":"3-7",
+                    "scripture":"12 Now behold, this Lachoneus, the governor, was a just man, and could not be frightened by the demands and the threatenings of a robber; therefore he did not hearken to the epistle of Giddianhi, the governor of the robbers, but he did cause that his people should cry unto the Lord for strength against the time that the robbers should come down against them.",
+                    "description":"This is how we should think of ourselves in relation to jesus christ our lord and our savior. We do not have power in our seleves to save us, only through christ. We should aim to put in first and please him, and do it accorinding to the rule",
                     "rating":4
                 },
                 {
@@ -301,6 +317,32 @@
                 }
             ]
         },
+         {
+            "tag":["blacks and the priestood","conteversal"],
+            "content":[
+                {
+                    "book":"Jacob",
+                    "chapter":"3",
+                    "verses":"8-9",
+                    "scripture":"",
+                    "description":"I thought as I read this time is joseph smith translated this in the earlier 1800 which haad a very different culture than we have now. In a New testiment class we discussed howthe culture and issues of the days very much determine how Pauls letters should be intrepeted. This can be intereted many different ways, but it should be used with modern dayy revelation to make sure the intreretation of such things are right.npm",
+                    "rating":6
+                }
+            ]
+        },
+        {
+            "tag":["Imperfect","incomplete knowledge"],
+            "content":[
+                {
+                    "book":"Hebrews",
+                    "chapter":"1",
+                    "verses":"2",
+                    "scripture":"",
+                    "description":"It is all though out pauls letters and herre is well, when they think they are in the last days, but clearly 2000 years latter that the end was not as close as they thought. This just shows that every word taken from the bible is absoultely true. You have to put it in context and also rremeber that the doctrine taught from it through the spirit as ou read is of the most worth to you",
+                    "rating":3
+                }
+            ]
+        },
         {
             "tag":["blacks and the priestood","conteversal","unsure","imperfect"],
             "content":[
@@ -330,6 +372,13 @@
                     "verses":"22-27",
                     "description":"Paul starts where they are and teches from there. He starts with the fact they are religious and are already wordhipping an $unknown god$. Building on this he declares this unknown god they are worshipping is God, but does correct them for using idols",
                     "rating":6
+                },
+                {
+                    "book":"1 Thessalonians",
+                    "chapter":"1",
+                    "verses":"8-9",
+                    "description":"To be the most effective missionaries we must be willing to give our whole soul to the work. This I feel goes well with 1 Corinthians 13 as charity goes with everything.",
+                    "rating":7
                 }
             ]
         },
@@ -504,6 +553,94 @@
                     "rating":2
                 }
             ]
+        },
+        {
+            "tag":["Praise","Gratitude"],
+            "content":[
+                {
+                    "book":"colossians",
+                    "chapter":"1",
+                    "verses":"10-21",
+                    "scripture":"",
+                    "description":"I love this chapter, how can we have that understanding and that much gratitude unto the lord our god",
+                    "rating":4
+                }
+            ]
+        },
+        {
+            "tag":["Law of Moses"],
+            "content":[
+                {
+                    "book":"Jacob",
+                    "chapter":"4",
+                    "verses":"5",
+                    "scripture":"",
+                    "description":"I think this is verse does a very good job of explaining the role that the law of moses played in the history of the jews. I like wise think there is a paralelle between the role every single commandment plays in point us to Jesus Christ. I believe that as we follow the commandments it points our souls to him.",
+                    "rating":4
+                }
+            ]
+        },
+        {
+            "tag":["Scattering of Israel"],
+            "content":[
+                {
+                    "book":"Jacob",
+                    "chapter":"5",
+                    "verses":"18",
+                    "scripture":"",
+                    "description":"This is a story about the scattering and gathering of Israel. It is intresting to note that if the lord had not scattered Israel all of Israels \"fruit\" would have been lost. The Lord scattered them because he loves them.",
+                    "rating":4
+                }
+            ]
+        },
+        {
+            "tag":["Prayer", "Forgivenness","Mercy"],
+            "content":[
+                {
+                    "book":"Ether",
+                    "chapter":"1",
+                    "verses":"13-5",
+                    "scripture":"",
+                    "description":"I few thought on the background of this scripture. One i beleive it is actually intresting that he was not forgiven before this point. He had not prayed and recieved confirmation on the prayer. Maybe it has to do with several things that he was finally able to hear the lords response. Maybe he went to a special place? maybe it was quite? maybe he prayed with enough effort to warrent  response? maybe he finally took time to listen? Regardless why now or what he did to get the response, he was forgiven for his faith in Christ!",
+                    "rating":4
+                }
+            ]
+        },
+        {
+            "tag":["Revelation", "Holy Spirit","Holy Ghost"],
+            "content":[
+                {
+                    "book":"Hebrews",
+                    "chapter":"3",
+                    "verses":"7-11",
+                    "scripture":"",
+                    "description":"These verses it it clear that Jehovah is talking but at the beginning of 7 it says the spirit is talking. This is confirming what we have been taught in the modern day that most of the time Heavenly father and Jesus Christ speak through the spirit, even to apostles and prophets.",
+                    "rating":4
+                }
+            ]
+        },
+        {
+            "tag":["Repentance","Forgiveness"],
+            "content":[
+                {
+                    "book":"2 Nephi",
+                    "chapter":"28",
+                    "verses":"22-23",
+                    "scripture":"",
+                    "description":"Just when you think their is no forgiveness because you are are grasped with the chains of hell. It is only when your dead that it is everlastingly to late.",
+                    "rating":4
+                },
+                {
+                    "book":"1 Timothy",
+                    "chapter":"1",
+                    "verses":"15-17",
+                    "scripture":"",
+                    "description":"Christ is patience enough to save both Alma and Paul. HE is patient enough to save us all. In fact according to this scripure that is one of the reasons we ehave the record of pauls conversion and back story is so we know how far forgiveness reaches to those who do indeed repent.",
+                    "rating":6
+                }
+            ]
         }
     ]
 }
+
+//I love this chapter, how can we have that understanding and that much gratitude unto the lord our god
