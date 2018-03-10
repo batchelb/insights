@@ -7,7 +7,7 @@
     transition: transform 2s;
 }
 .transformy {
-    transform: translateY(30px);
+    transform: translateY(20px);
     transition: transform 2s;
 }
 .view-insight {
@@ -61,8 +61,13 @@
             flex: 1 1 0;
             height: calc(~"100% - 40px");
         }
+        .tile-container {
+            flex: 1 1 0;
+            height: calc(~"100% - 40px");
+            margin-left: 20px;
+        }
         .holder {
-            margin: 20px;
+            margin: 15px;
             border: 1px solid black;
             height: 350px;
             max-height: 350px;
@@ -78,8 +83,7 @@
                 display: flex;
                 justify-content: space-between;
                 .button {
-                    flex: 0 0 50px;
-
+                    flex: 0 0 115px;
                 }
             }
         }
@@ -163,10 +167,47 @@
     .titles {
         display: flex;
         justify-content: space-between;
+        .toogle{
+            margin-top:10px;
+            margin-left:10px;
+            .first-button {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .second-button {
+                position: relative;
+                right: 4px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
         .right {
             position: relative;
-            .title, .back {
-                padding-right: 65px;
+            width: 270px;
+           .back {
+                display: flex;
+                justify-content: space-between;
+                width: initial;
+                padding-right:10px;
+                align-items: center;
+                span {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .sub-title {
+                margin-top:10px;
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+                i {
+                    font-size: 16px;
+                    cursor: pointer;
+                }
             }
             .story-board-buttons {
                 position: absolute;
@@ -174,7 +215,7 @@
                 flex-direction: column;
                 padding-top: 20px;
                 button {
-                    margin: 10px 21px 0px 8px;
+                    margin: 10px 21px 0px 6px;
                     width: 250px;
                 }
             }

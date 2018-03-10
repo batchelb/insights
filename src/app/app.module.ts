@@ -17,7 +17,6 @@ import { Ng2DragDropModule } from 'ng2-drag-drop';
 import { QuillModule } from 'ngx-quill';
 import { ViewInsightsComponent } from './view-insights/view-insights.component';
 import { CapitalizePipe } from './capitalize.pipe';
-import { ViewDetailsComponent } from './view-insights/view-details/view-details.component';
 import { SimpleInputComponent } from './view-insights/simple-input/simple-input.component';
 import { SearchStoryboardsComponent } from './storyboards/search-storyboards/search-storyboards.component';
 
@@ -34,7 +33,6 @@ const appRoutes: Routes = [
     CreateInsightComponent,
     ViewInsightsComponent,
     CapitalizePipe,
-    ViewDetailsComponent,
     SimpleInputComponent,
     SearchStoryboardsComponent
   ],
@@ -60,6 +58,6 @@ const appRoutes: Routes = [
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: Interceptor, multi: true }, CoreService, AuthService, AuthGuard],
   bootstrap: [AppComponent],
-  entryComponents:[ViewDetailsComponent, SimpleInputComponent]
+  entryComponents:[SimpleInputComponent]
 })
 export class AppModule { }

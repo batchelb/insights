@@ -1,14 +1,13 @@
 import { Component, OnInit, AfterViewInit, ViewChild, HostListener, ChangeDetectorRef,  } from '@angular/core';
 import { CoreService } from '../core.service';
-import * as _ from 'lodash';
 import { MatDialog } from '@angular/material';
 import { Router } from '@angular/router';
-import { ViewDetailsComponent } from './view-details/view-details.component';
 import { SimpleInputComponent } from './simple-input/simple-input.component';
 import { Subject } from 'rxjs';
 import * as FileSaver from 'file-saver';
 import * as htmlDocx from 'html-docx-js/dist/html-docx.js';
 import * as domtoimage from 'dom-to-image/dist/dom-to-image.min.js';
+import * as _ from 'lodash';
 @Component({
   selector: 'app-view-insights',
   templateUrl: './view-insights.component.html',
@@ -42,10 +41,10 @@ export class ViewInsightsComponent implements OnInit, AfterViewInit {
   previousNext;
   showStoryBoard;
   delayShowStoryBoard;
-  isViewInsights = false;
+  isViewInsights = true;
   storyboards = [];
   filteredStoryboards = [];
-  selectedStoryboard;
+  selectedStoryboard:any = {type:'storyboard'};
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     this.ngAfterViewInit();
@@ -117,9 +116,6 @@ export class ViewInsightsComponent implements OnInit, AfterViewInit {
     this.coreService.selectedInsight = insight;
     this.router.navigate(['create']);
   }
-  viewInsight(insight){
-    this.dialog.open(ViewDetailsComponent, {data:insight});
-  }
   drag(insight){
     this.droppedOutside ? this.SBInsights.splice(this.SBInsights.indexOf(insight),1) : this.droppedOutside = true;
   }
@@ -163,7 +159,7 @@ export class ViewInsightsComponent implements OnInit, AfterViewInit {
   }
   openSimpleInput(callback) {
     this.dialog.open(SimpleInputComponent,{
-      data:this.selectedStoryboard.storyboardName,
+      data:this.selectedStoryboard.storyboardName || '',
       width:'500px'
     }).afterClosed().subscribe((title) =>  title && callback(title));
   }

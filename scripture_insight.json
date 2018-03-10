@@ -497,7 +497,7 @@
                     "chapter":"2",
                     "verses":"15",
                     "scripture":"15 Which shew the work of the law written in their hearts, their conscience also bearing witness, and their thoughts the mean while accusing or else excusing one another;)",
-                    "description":"This in the New Revised Standard Version, reads clear, but It fits with with the book of mormon when it says by the laws ye have those are the law you will be judged by. out of these "book"s will they be judged ",
+                    "description":"This in the New Revised Standard Version, reads clear, but It fits with with the book of mormon when it says by the laws ye have those are the law you will be judged by. out of these book's will they be judged ",
                     "rating":5
                 }
             ]
@@ -509,9 +509,22 @@
                     "book":"1 Nephi",
                     "chapter":"2",
                     "verses":"3",
-                    "scripture":"3 And it came to pass that he was obedient unto the word of the Lord, wherefore he did as the Lord commanded him.",
+                    "scripture":"",
                     "description":"The scripure points out the Lehi was in the state of obediance therefore he was obediant to this commandment. I beleive that we need to reach this state of obediance in our own lives",
                     "rating":5
+                }
+            ]
+        },
+        {
+            "tag":["Obediance", "Consquences"],
+            "content":[
+                {
+                    "book":"Mosiah",
+                    "chapter":"2",
+                    "verses":"32-33",
+                    "scripture":"",
+                    "description":"This scripture make the consquences of listening to Satan dire. Everyone should be aware that listening to satan is like drinking Damnation to there soul.",
+                    "rating":7
                 }
             ]
         },
@@ -620,6 +633,71 @@
             ]
         },
         {
+            "tag":["Covenants", "God Promises"],
+            "content":[
+                {
+                    "book":"Hebrews",
+                    "chapter":"6",
+                    "verses":"13-18",
+                    "scripture":"",
+                    "description":"When God made his covenant with abraham, he did not have any one else to swear by, so he swore by himself. This not only is an intresting scripture but really it should give us the utmost faith that God will keep his promises. He has stake his word on the line and we should be able to trust him.",
+                    "rating":7
+                }
+            ]
+        },
+        {
+            "tag":["New Coveneant", "Law of Moses"],
+            "content":[
+                {
+                    "book":"Hebrews",
+                    "chapter":"7",
+                    "verses":"11-14",
+                    "scripture":"",
+                    "description":"This passage of scripture has a great explaination why the law of moses was fulfilled after the coming of christ. Becuase he was after a different order they require a different law. A better law. We also were given this higher preisthood so it makes sense that we need to live by the higher law.",
+                    "rating":7
+                }
+            ]
+        },
+        {
+            "tag":["Great and Last Sacrfice"],
+            "content":[
+                {
+                    "book":"Hebrews",
+                    "chapter":"9",
+                    "verses":"",
+                    "scripture":"",
+                    "description":"This chapter talks alot about how Christ was the great and last sacrifice in light of the law of moses. How it is that he is, that through the holy spirit he offered himself a sacrifice and as a mortal he was only given to die once for sin.",
+                    "rating":4
+                }
+            ]
+        },
+        {
+            "tag":["Prepareation", "Revelatioin"],
+            "content":[
+                {
+                    "book":"Mosiah",
+                    "chapter":"2",
+                    "verses":"9",
+                    "scripture":"",
+                    "description":"You need both your heart and mind open in order for the mystery of god to be revealed. This mean that you both want to learn through feeling and you are not closed of in your brain through logic, but you are humble to try to underrstand the things God wants to tell you.",
+                    "rating":6
+                }
+            ]
+        },
+        {
+            "tag":["Faith", "Action"],
+            "content":[
+                {
+                    "book":"Hebrews",
+                    "chapter":"11",
+                    "verses":"12-16",
+                    "scripture":"",
+                    "description":"This is thalking about abraham. He had faith even though he did not see all the things he was promised he still had faith, that there was a better world. A heavenly world. How we should act and talk makes it seem ike we are just visting here but longing for the heavenly. I believe that must of us get caught up in the world. The solution is to stregthen our faith in Christ and in his promises.",
+                    "rating":6
+                }
+            ]
+        },
+        {
             "tag":["Repentance","Forgiveness"],
             "content":[
                 {
@@ -642,5 +720,3 @@
         }
     ]
 }
-
-//I love this chapter, how can we have that understanding and that much gratitude unto the lord our god
