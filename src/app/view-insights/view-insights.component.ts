@@ -39,12 +39,13 @@ export class ViewInsightsComponent implements OnInit, AfterViewInit {
   dragCopy;
   fromBank = false;
   previousNext;
-  showStoryBoard;
-  delayShowStoryBoard;
+  showStoryBoard = true;
+  delayShowStoryBoard = true;
   isViewInsights = true;
   storyboards = [];
   filteredStoryboards = [];
-  selectedStoryboard:any = {type:'storyboard'};
+  selectedStoryboard:any = {type:'spider'};
+  startingConnection:any = false;
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     this.ngAfterViewInit();
@@ -59,7 +60,7 @@ export class ViewInsightsComponent implements OnInit, AfterViewInit {
           insight.insight.replace('script','')
           insight.display = `${insight.book} ${insight.chapter}:${insight.verses}`
         });
-        this.filteredInsights = this.insights = insights;
+        this.SBInsights = this.filteredInsights = this.insights = insights;
       }
     });
     this.coreService.getTags().subscribe((tags:any) =>{
@@ -192,5 +193,25 @@ export class ViewInsightsComponent implements OnInit, AfterViewInit {
           this.setRows();
       });
     });
+  }
+
+
+
+  //start spider code
+  placeSpiderInsight(drop){
+    this.storyBoardInsights.push(Object.assign(this.draggingInsight, {x:drop.offsetX - 105,y:drop.offsetY - 55, connections:[]}));
+    this.dragCopy = this.draggingInsight =false;
+  }
+  expandCluster(insight) {
+    if(this.startingConnection) {
+      //make connection
+      if(this.startingConnection !== insight) {
+        this.startingConnection.connections.push(insight);
+        this.startingConnection = false
+      }
+    } else {
+      this.startingConnection = insight;
+    }
+    console.log(this.startingConnection)
   }
 }

@@ -13,9 +13,12 @@
           </div>
           <div class="right" *ngIf="showStoryBoard">
               <div class="title">{{selectedStoryboard.storyboardName || 'Create Story Board'}}</div>
-              <div class="back" (click)="showStoryBoard = delayShowStoryBoard = false">
-                <span><i class="material-icons">chevron_left</i> View {{selectedStoryboard.storyboardName ? 'Story Boards': 'Insights'}}</span>
-                <button class="first-button" [color]="" mat-raised-button (click)="selectedStoryboard.type === 'spider'">Insights</button>
+              <div class="back">
+                <span  (click)="showStoryBoard = delayShowStoryBoard = false">
+                  <i class="material-icons">chevron_left</i>
+                   View {{selectedStoryboard.storyboardName ? 'Story Boards': 'Insights'}}
+                </span>
+                <button class="" [color]="" mat-raised-button (click)="selectedStoryboard.type = selectedStoryboard.type === 'spider' ? 'storyboard' : 'spider'">Switch</button>
               </div>
               <div class="story-board-buttons" *ngIf="delayShowStoryBoard">
                   <button mat-raised-button (click)="saveStoryBoard()">{{selectedStoryboard.storyboardName ? 'Update Story Board': 'Create Story Board'}}</button>
@@ -75,7 +78,9 @@
         </div>
       </div>
     </div>
-    <div class="story-board" droppable (onDrop)="storyBoardPlace()" #storyBoard *ngIf="">
+
+    <!-- this is the normal storyboard -->
+    <div class="story-board" droppable (onDrop)="storyBoardPlace()" #storyBoard *ngIf="selectedStoryboard.type === 'storyboard'">
         <div class="story-board-row" droppable (onDrop)="dragCopy = fromBank = draggingInsight = false" *ngFor="let row of storyBoardRows; let i = index" [class.connect-top-row]="i" [class.connect-bottom-row]="i !== storyBoardRows.length -1">
           <div class="first-add-connector" *ngIf="!i"  (dragover)="debounce.next(['insertDraggingInsight', {}, dragCopy])">
             <span class="add-connector first" (click)="addConnector()">
@@ -98,6 +103,17 @@
               </span>
           </div>
         <div class="connect-bottom" *ngIf="i !== storyBoardRows.length - 1"></div>
+      </div>
+    </div>
+
+    <!-- this is the spider board -->
+    <div class="story-board spider" droppable (onDrop)="placeSpiderInsight($event.nativeEvent)" *ngIf="selectedStoryboard.type === 'spider'">
+      <div class="spider-insight" draggable *ngFor="let insight of storyBoardInsights" (click)="expandCluster(insight)" (onDragStart)="draggingInsight = insight">
+          <div class="panel" [class.hightlight]="startingConnection === insight" [style.top.px]="insight.y" [style.left.px]="insight.x">
+            <div class="tiny-title">{{insight.display}}</div>
+            <div [innerHTML]="insight.insight"></div>
+          </div>
+          <div class="connecting-line" *ngFor="let connectionLine of insight.connections"></div>
       </div>
     </div>
   </div>
