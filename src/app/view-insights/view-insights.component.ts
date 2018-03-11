@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit, ViewChild, HostListener, ChangeDetect
 import { CoreService } from '../core.service';
 import { MatDialog } from '@angular/material';
 import { Router } from '@angular/router';
+import  { ViewDetailsComponent } from './view-details/view-details.component'
 import { SimpleInputComponent } from './simple-input/simple-input.component';
 import { Subject } from 'rxjs';
 import * as FileSaver from 'file-saver';
@@ -84,6 +85,9 @@ export class ViewInsightsComponent implements OnInit, AfterViewInit {
     const padding = 30;
     this.storyInsightsPerRow = Math.floor(this.storyBoard.nativeElement.clientWidth / (this.storyInsightWidth + this.dottedLineWidth + padding));
     setTimeout(()=>this.setRows());
+  }
+  viewInsight(insight){
+    this.dialog.open(ViewDetailsComponent,{data:insight})
   }
   setRows() {
     this.storyBoardRows = [];
