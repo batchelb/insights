@@ -75,6 +75,11 @@
             width: 250px;
             min-width: 250px;
             position: relative;
+            button {
+                font-size: 12px;
+                padding: 0px 3px 0px 4px;
+                color: black !important;
+            }
             .row{
                 padding: 3px;
                 width: calc(~"100% - 6px");
@@ -113,6 +118,7 @@
 }
 .header-row {
     border: rgba(0,0,0,.42) solid 1px;
+    background: #2ec3a7;
     .header-cell {
         font-size: 22px;
         font-weight: 600;
@@ -170,6 +176,7 @@
         .toogle{
             margin-top:10px;
             margin-left:10px;
+            display: flex;
             .first-button {
                 border-top-right-radius: 0px;
                 border-bottom-right-radius: 0px;
@@ -177,8 +184,7 @@
                 border-bottom-left-radius: 10px;
             }
             .second-button {
-                position: relative;
-                right: 4px;
+                border-left: solid black 2px;
                 border-top-left-radius: 0px;
                 border-bottom-left-radius: 0px;
                 border-top-right-radius: 10px;

@@ -7,8 +7,8 @@
             <div class="title">View {{ isViewInsights ? 'Insights' : 'Story Boards'}}</div>
             <div class="back" routerLink="/create"><i class="material-icons">chevron_left</i> Create Insights</div>
             <div class="toogle">
-              <button class="first-button" [color]="" mat-raised-button (click)="isViewInsights = true">Insights</button>
-              <button class="second-button" [color]="" mat-raised-button (click)="isViewInsights = false">Storyboards</button>
+              <button class="first-button" [color]="!isViewInsight ? 'primary': 'warn'" mat-raised-button (click)="isViewInsights = true">Insights</button>
+              <button class="second-button" [color]="isViewInsight ? 'primary': 'warn'" mat-raised-button (click)="isViewInsights = false">Storyboards</button>
             </div>
           </div>
           <div class="right" *ngIf="showStoryBoard">
@@ -18,14 +18,14 @@
                   <i class="material-icons">chevron_left</i>
                    View {{selectedStoryboard.storyboardName ? 'Story Boards': 'Insights'}}
                 </span>
-                <button class="" [color]="" mat-raised-button (click)="selectedStoryboard.type = selectedStoryboard.type === 'spider' ? 'storyboard' : 'spider'">Switch</button>
+                <button class="" color="accent" mat-raised-button (click)="selectedStoryboard.type = selectedStoryboard.type === 'spider' ? 'storyboard' : 'spider'">Switch</button>
               </div>
               <div class="story-board-buttons" *ngIf="delayShowStoryBoard">
-                  <button mat-raised-button (click)="saveStoryBoard()">{{selectedStoryboard.storyboardName ? 'Update Story Board': 'Create Story Board'}}</button>
-                  <button mat-raised-button (click)="wordDownload()">Download Talk</button>
-                  <button mat-raised-button (click)="imageDownload()">Save as Image</button>
-                  <button mat-raised-button *ngIf="!selectedStoryboard.storyboardName" (click)="storyBoardInsights = storyBoardRows = []">Clear Story Board</button>
-                  <button mat-raised-button *ngIf="selectedStoryboard.storyboardName" (click)="deleteStoryBoard()">Delete Story Board</button>
+                  <button color="accent" mat-raised-button (click)="saveStoryBoard()">{{selectedStoryboard.storyboardName ? 'Update Story Board': 'Create Story Board'}}</button>
+                  <button color="accent" mat-raised-button (click)="wordDownload()">Download Talk</button>
+                  <button color="accent" mat-raised-button (click)="imageDownload()">Save as Image</button>
+                  <button color="accent" mat-raised-button *ngIf="!selectedStoryboard.storyboardName" (click)="storyBoardInsights = storyBoardRows = []">Clear Story Board</button>
+                  <button color="accent" mat-raised-button *ngIf="selectedStoryboard.storyboardName" (click)="deleteStoryBoard()">Delete Story Board</button>
               </div>
           </div>
           <div class="right" *ngIf="!showStoryBoard && selectedStoryboard.storyboardName">
@@ -49,14 +49,14 @@
       <div class="bottom-half">
         <div class="table-container" *ngIf="isViewInsights">
           <div class="header-row row">
-            <div class="cell header-cell" *ngFor="let header of attributes" [style.flex]="header === 'insight' ?  '0 0 40%' : '1 1 0'">
+            <div class="cell header-cell" *ngFor="let header of attributes" [style.flex]="header === 'insight' ?  '3 1 120px' : '1 3 120px'">
               {{ header | capitalize }}
             </div>
             <div class="cell button"></div>
           </div>
           <div class="data-rows">
             <div class="data-row row" draggable (onDragEnd)="droppedOutside = true" *ngFor="let insight of filteredInsights; let i = index" [dragData]="insight"  (mouseenter)="hoverRow = i" (mouseleave)="hoverRow = -1" (click)="viewInsight(insight)">
-              <div class="cell data-cell" *ngFor="let attribute of attributes"  [style.flex]="attribute === 'insight' ?  '0 0 40%' : '1 1 0'" [innerHTML]="insight[attribute]"></div>
+              <div class="cell data-cell" *ngFor="let attribute of attributes"  [style.flex]="attribute === 'insight' ?  '3 1 120px' : '1 3 120px'" [innerHTML]="insight[attribute]"></div>
               <div class="cell button"><button mat-button (click)="updateInsight(insight)" [class.hidden]="hoverRow !== i">Edit</button></div>
             </div>
           </div>
@@ -72,7 +72,7 @@
         <div class="holder" droppable (onDrop)="drop($event.dragData || dragCopy)"  [class.transformy]="showStoryBoard">
           <div class="row sub-title">
             <span>Story Board</span>
-            <button class="button" mat-button *ngIf="!showStoryBoard" (click)="goStoryBoard()">To Storyboard</button>
+            <button mat-raise-button color="accent" mat-button *ngIf="!showStoryBoard" (click)="goStoryBoard()">To Storyboard</button>
           </div>
           <div class="row" *ngFor="let insight of SBInsights; let i = index" droppable draggable (onDragStart)="draggingInsight = dragCopy = fromBank =  insight" (onDragEnd)="drag(insight)"  (onDrop)="drop(dragCopy,i)"> {{insight.book + ' ' + insight.chapter + ':' + insight.verses}}</div>
         </div>

@@ -12,8 +12,8 @@
         <mat-error>{{loginForm.get('hash').errors?.required ? 'Required' : 'Invalid Password'}}</mat-error>
       </mat-form-field>
       <div class="buttons">
-        <button mat-raised-button (click)="login()" *ngIf="!isSignup" >Login</button>
-        <button mat-raised-button (click)="signup()">Sign Up</button>
+        <button mat-raised-button color="accent" (click)="login()" *ngIf="!isSignup" >Login</button>
+        <button mat-raised-button color="accent" (click)="signup()">Sign Up</button>
       </div>
     </form>
 </div>
