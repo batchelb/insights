@@ -325,8 +325,21 @@
                     "chapter":"3",
                     "verses":"8-9",
                     "scripture":"",
-                    "description":"I thought as I read this time is joseph smith translated this in the earlier 1800 which haad a very different culture than we have now. In a New testiment class we discussed howthe culture and issues of the days very much determine how Pauls letters should be intrepeted. This can be intereted many different ways, but it should be used with modern dayy revelation to make sure the intreretation of such things are right.npm",
+                    "description":"I thought as I read this time is joseph smith translated this in the earlier 1800 which haad a very different culture than we have now. In a New testiment class we discussed howthe culture and issues of the days very much determine how Pauls letters should be intrepeted. This can be intereted many different ways, but it should be used with modern dayy revelation to make sure the intreretation of such things are right.",
                     "rating":6
+                }
+            ]
+        },
+        {
+            "tag":["Suffering","Conterversal"],
+            "content":[
+                {
+                    "book":"1 Peter",
+                    "chapter":"4",
+                    "verses":"12-18",
+                    "scripture":"",
+                    "description":"This is how we should meet trail and tribulation that we find in this life. We should know that it is a test and that we should be glad to stick it out as this is a way we show God how serious we are about following his Son. We should do good to them that do bad to us, for Christ did the same thing by performing the atonement.",
+                    "rating":4
                 }
             ]
         },
@@ -464,7 +477,7 @@
             ]
         },
         {
-            "tag":["One Bpdy","One in Christ","unity"],
+            "tag":["One Body","One in Christ","unity"],
             "content":[
                 {
                     "book":"Ephesians",
@@ -685,6 +698,27 @@
             ]
         },
         {
+            "tag":["Lifestyle", "Christ-Like"],
+            "content":[
+                {
+                    "book":"Hebrews",
+                    "chapter":"13",
+                    "verses":"1-6",
+                    "scripture":"",
+                    "description":"As a Disciple of Jesus Christ this is exactly how we need to act. We need to take upon ourselves other peoples burdens. We need to abstain from sin and free ourseleves from any love of money. This meeans putting god before money every single time.",
+                    "rating":7
+                },
+                {
+                    "book":"Mosiah",
+                    "chapter":"4",
+                    "verses":"19-22",
+                    "scripture":"",
+                    "description":"King Benjiam is saying that like god who has not left you ask/beg in vain, but has pour his spirit out generously upon you even though you do not deserve it in the least, you likewise should never turn away those who ask from you. In away we are trying to be like God.",
+                    "rating":7
+                }
+            ]
+        },
+        {
             "tag":["Faith", "Action"],
             "content":[
                 {
@@ -693,6 +727,14 @@
                     "verses":"12-16",
                     "scripture":"",
                     "description":"This is thalking about abraham. He had faith even though he did not see all the things he was promised he still had faith, that there was a better world. A heavenly world. How we should act and talk makes it seem ike we are just visting here but longing for the heavenly. I believe that must of us get caught up in the world. The solution is to stregthen our faith in Christ and in his promises.",
+                    "rating":6
+                },
+                {
+                    "book":"Mosiah",
+                    "chapter":"4",
+                    "verses":"9-10",
+                    "scripture":"",
+                    "description":"It is not enough that you belevie these things, you should do them. This is a remonder that belief is good and you need to do it, it is not enough as it takes repentance from sin in order to feel the power of salvation in your life",
                     "rating":6
                 }
             ]
@@ -715,6 +757,45 @@
                     "scripture":"",
                     "description":"Christ is patience enough to save both Alma and Paul. HE is patient enough to save us all. In fact according to this scripure that is one of the reasons we ehave the record of pauls conversion and back story is so we know how far forgiveness reaches to those who do indeed repent.",
                     "rating":6
+                }
+            ]
+        },
+        {
+            "tag":["Poor","Charity","Equality"],
+            "content":[
+                {
+                    "book":"James",
+                    "chapter":"2",
+                    "verses":"1-7",
+                    "scripture":"",
+                    "description":"Here is a prinicple of equality among our fellow mean. If we give rich special treatment just becuase they are rich then we deny our faith. This is a good example of how god is no respector persons no matter what the bais is. IT also points to how much God respects the poor and our duty to help them in any way we can.",
+                    "rating":4
+                }
+            ]
+        },
+        {
+            "tag":["Action", "Agency"],
+            "content":[
+                {
+                    "book":"James",
+                    "chapter":"4",
+                    "verses":"",
+                    "scripture":"",
+                    "description":"We need to be people of action. Even in action can be a sin. We need to pray, scripture and speak well and not judge other. To not do this it is a sin",
+                    "rating":4
+                }
+            ]
+        },
+        {
+            "tag":["Hardened Hearts", "Wickedness"],
+            "content":[
+                {
+                    "book":"Mosiah",
+                    "chapter":"11",
+                    "verses":"29",
+                    "scripture":"",
+                    "description":"Even if we are wicked are hearts can still get harder. Here king Noah who is spending his tim as a wine bibber and in riot living, but his hearrt hardens again though not listen and not repenting. We need to follow instructions for repenting of our sins or we could end up with a hard heart.",
+                    "rating":4
                 }
             ]
         }

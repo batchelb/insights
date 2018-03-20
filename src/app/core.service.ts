@@ -71,10 +71,16 @@ export class CoreService {
   upsertStoryBoard(storyboard) {
     storyboard.connections = storyboard.insights.filter((insight,index) => {
       insight.order = index;
-      return insight.connection
+      return insight.connection;
     });
     storyboard.insights = storyboard.insights.filter(insight => insight.insightId);
-    this.http.post(`https://1wnjg3qwhl.execute-api.us-west-1.amazonaws.com/PROD/storyboards`, storyboard).subscribe();
+    return this.http.post(`https://1wnjg3qwhl.execute-api.us-west-1.amazonaws.com/PROD/storyboards`, storyboard).subscribe();
+  }
+  getSpiderBoards() {
+    return this.http.get(`https://1wnjg3qwhl.execute-api.us-west-1.amazonaws.com/PROD/spiderboards`);
+  }
+  upsertSpiderBoard(spiderboard, lines) {
+    return this.http.post(`https://1wnjg3qwhl.execute-api.us-west-1.amazonaws.com/PROD/spiderboards`, Object.assign(spiderboard,{lines:lines}, {spiderboardName:spiderboard.storyboardName})).subscribe();
   }
 
 }

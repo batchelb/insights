@@ -52,8 +52,7 @@ export class CreateInsightComponent implements OnInit, OnDestroy {
       [{ 'list': 'ordered'}, { 'list': 'bullet' }],
       [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
       [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
-      [{ 'font': [] }],
-      ['link', 'image', 'video']                         // link and image, video
+      [{ 'font': [] }]
     ]
   };
   constructor(private coreService: CoreService, private cd:ChangeDetectorRef, private router:Router) { }
@@ -112,7 +111,7 @@ export class CreateInsightComponent implements OnInit, OnDestroy {
         this.tagValue = '';
         this.selectedTagIndex = -1;
         this.filterTags(false);
-        break
+        break;
       }
   }
   filterTags(showDropDown) {

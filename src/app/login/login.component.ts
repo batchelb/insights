@@ -27,7 +27,8 @@ export class LoginComponent implements OnInit {
     this.coreService.loginUser(this.loginForm.value).subscribe((token:any)=>{
       if(typeof token === 'string') {
         localStorage.setItem('currentUser', JSON.stringify({ token: token}));
-        this.authService.token = token
+        this.authService.token = token;
+        console.log(token)
         this.router.navigate(['create']);
       } else {
         this.loginForm.get('username').setErrors({invalid:true});

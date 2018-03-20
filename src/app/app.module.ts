@@ -18,8 +18,7 @@ import { QuillModule } from 'ngx-quill';
 import { ViewInsightsComponent } from './view-insights/view-insights.component';
 import { CapitalizePipe } from './capitalize.pipe';
 import { SimpleInputComponent } from './view-insights/simple-input/simple-input.component';
-import { ViewDetailsComponent } from './view-insights/view-details/view-details.component'
-import { SearchStoryboardsComponent } from './storyboards/search-storyboards/search-storyboards.component';
+import { ViewDetailsComponent } from './view-insights/view-details/view-details.component';
 
 const appRoutes: Routes = [
   { path: 'create', component: CreateInsightComponent, canActivate: [AuthGuard]},
@@ -35,7 +34,6 @@ const appRoutes: Routes = [
     ViewInsightsComponent,
     CapitalizePipe,
     SimpleInputComponent,
-    SearchStoryboardsComponent,
     ViewDetailsComponent
   ],
   imports: [

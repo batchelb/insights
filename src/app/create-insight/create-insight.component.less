@@ -1,4 +1,7 @@
 @width:600px;
+.back {
+    width:initial;
+}
 .full-page{
     display: flex;
     justify-content: space-between;
@@ -38,11 +41,12 @@
             padding: 20px 10px;
             margin:0px;
             width: calc(~"100% - 10px");
-            background: white;
+            background: #2ec3a7;
             border-bottom: #555 1px solid;
         }
         .chapter {
             padding: 15px 15px 15px 30px;
+            background: white;
         }
     }
 }
@@ -114,7 +118,7 @@
                 max-height: 25px;
             }
             .active{
-                color:#233596 !important;
+                color:#2ec3a7 !important;
                 transition: color .5s;
             }
             .rating-measure{
@@ -131,12 +135,12 @@
                     // border: 2px solid rgba(0,0,0,.42);
                     width:100%;
                     &.active{
-                        background: #233596;
+                        background: #2ec3a7;
                         transition: background-color .5s;
                     }
                 }
                 .marker{
-                    background:#233596;
+                    background:#2ec3a7;
                     position: absolute;
                     height:30px;
                     width:30px;
@@ -160,7 +164,7 @@
                                 height: 30px;
                             }
                             &.active{
-                                background: #233596;
+                                background: #2ec3a7;
                                 transition: background-color .5s;
                             }
                         }
